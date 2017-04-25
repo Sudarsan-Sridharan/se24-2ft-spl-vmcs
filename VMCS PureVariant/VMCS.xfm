@@ -298,9 +298,11 @@
         </cm:relation>
       </cm:relations>
       <cm:relations cm:id="iBNfRlLQLrrzPmVx-" cm:class="ps:children">
-        <cm:relation cm:id="iJoPvcqDEcuwQNugJ" cm:type="ps:alternative" cm:range="1">
-          <cm:target cm:id="i-gA2BVCBlgPEZVph">./i_BI8V0IDgnAezImq</cm:target>
-          <cm:target cm:id="iZAVGtc4CMs2f5aFl">./iG9mxCND1aKlvtsoI</cm:target>
+        <cm:relation cm:id="iZVMnLJgjcz9f1kKl" cm:type="ps:mandatory" cm:range="n">
+          <cm:target cm:id="iwEldUY1YJRc23POM">./i_BI8V0IDgnAezImq</cm:target>
+        </cm:relation>
+        <cm:relation cm:id="i4rrsolcOEKI-KXeE" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="ihP4Af1hm5PH5OmyF">./iG9mxCND1aKlvtsoI</cm:target>
         </cm:relation>
       </cm:relations>
       <cm:properties>
@@ -311,10 +313,10 @@
           <cm:constant cm:id="iUCEhmEj2trBTE_I1" cm:type="ps:datetime">2017-04-24T07:26:52.630Z</cm:constant>
         </cm:property>
         <cm:property cm:id="i8loilSUdkvGhIr2f" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="ijQ2KOCa-KJKC-PV1" cm:type="ps:string">e0015290</cm:constant>
+          <cm:constant cm:id="ijQ2KOCa-KJKC-PV1" cm:type="ps:string">e0015370</cm:constant>
         </cm:property>
         <cm:property cm:id="ixH1cbb8m288Dhkcc" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="ipN0xk8d9cy4CGbii" cm:type="ps:datetime">2017-04-24T07:27:32.900Z</cm:constant>
+          <cm:constant cm:id="ipN0xk8d9cy4CGbii" cm:type="ps:datetime">2017-04-25T08:07:10.429Z</cm:constant>
         </cm:property>
       </cm:properties>
       <cm:vname>
@@ -345,7 +347,7 @@
         <cm:mimedesc cm:id="iv2jUyUe82b6iZbWV" cm:mimetype="text/plain" cm:encoding="utf-8">Button</cm:mimedesc>
       </cm:vname>
     </cm:element>
-    <cm:element cm:id="iG9mxCND1aKlvtsoI" cm:name="Keypad" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+    <cm:element cm:id="iG9mxCND1aKlvtsoI" cm:name="Keypad" cm:type="ps:feature" cm:class="ps:feature">
       <cm:relations cm:id="if6o57OEQwavEyrV_" cm:class="ps:parents">
         <cm:relation cm:id="ibNQDbClBs3sEh4dB" cm:type="ps:parent">
           <cm:target cm:id="iwsK0aU1lt63o6JdC">./iByQNrQNZGy_vYZbm</cm:target>
@@ -359,10 +361,10 @@
           <cm:constant cm:id="iEODOcWArLOCtjkge" cm:type="ps:datetime">2017-04-24T07:27:32.900Z</cm:constant>
         </cm:property>
         <cm:property cm:id="igfYvw65OwIl9mySn" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iYwySdy97ZLzuarwG" cm:type="ps:string">e0015290</cm:constant>
+          <cm:constant cm:id="iYwySdy97ZLzuarwG" cm:type="ps:string">e0015370</cm:constant>
         </cm:property>
         <cm:property cm:id="iyMiqk91A86CBKHap" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iA59KELJZ0SoGxMfW" cm:type="ps:datetime">2017-04-24T07:27:32.900Z</cm:constant>
+          <cm:constant cm:id="iA59KELJZ0SoGxMfW" cm:type="ps:datetime">2017-04-25T08:07:10.430Z</cm:constant>
         </cm:property>
       </cm:properties>
       <cm:vname>
