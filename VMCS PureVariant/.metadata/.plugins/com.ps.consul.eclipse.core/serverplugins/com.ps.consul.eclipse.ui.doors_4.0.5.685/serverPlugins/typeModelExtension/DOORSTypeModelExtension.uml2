@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmi:id="_K5oZ0MlaEdq48JvRqzjTfw" name="DOORS Type Model Extension">
+  <ownedMember xmi:type="uml:Package" xmi:id="_SBsosMlaEdq48JvRqzjTfw" name="doors">
+    <ownedMember xmi:type="uml:Stereotype" xmi:id="_vND84LT9EducWqnrbLfOMw" name="namespace"/>
+    <ownedMember xmi:type="uml:Class" xmi:id="_Yz3gEMlaEdq48JvRqzjTfw" name="requirement">
+      <generalization xmi:id="_Yz3gEclaEdq48JvRqzjTfw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_XDGbISh8Eqmtv9qqqgdZDS"/>
+      </generalization>
+      <ownedAttribute xmi:id="_LCr4kLUBEducWqnrbLfOMw" name="doors:AbsoluteNumber" type="_lzI5wLT1EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_LCr4kbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_LCr4krUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LCr4k7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_YmElELUBEducWqnrbLfOMw" name="doors:CreatedBy" type="_b1lg8LT0EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_YmElEbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_YmElErUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YmElE7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_b_7c0LUBEducWqnrbLfOMw" name="doors:CreatedOn" type="_5ce34LT1EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_b_7c0bUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_b_7c0rUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b_7c07UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fO56QLUBEducWqnrbLfOMw" name="doors:CreatedThru" type="_6xaqgLT1EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_fO56QbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_fO56QrUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fO56Q7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_hCrlALUBEducWqnrbLfOMw" name="doors:Description" type="_b1lg8LT0EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_hCrlAbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_hCrlArUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hCrlA7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lO5t0LUBEducWqnrbLfOMw" name="doors:LastModifiedBy" type="_b1lg8LT0EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_lO5t0bUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_lO5t0rUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lO5t07UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m5b9ALUBEducWqnrbLfOMw" name="doors:LastModifiedOn" type="_5ce34LT1EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_m5b9AbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_m5b9ArUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m5b9A7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pI76cLUBEducWqnrbLfOMw" name="doors:Name" type="_b1lg8LT0EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_pI76cbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_pI76crUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pI76c7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_qc-VMLUBEducWqnrbLfOMw" name="doors:ObjectHeading" type="_b1lg8LT0EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_qc-VMbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_qc-VMrUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qc-VM7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sRDh8LUBEducWqnrbLfOMw" name="doors:ObjectShortText" type="_b1lg8LT0EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_sRDh8bUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_sRDh8rUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sRDh87UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tnVYYLUBEducWqnrbLfOMw" name="doors:ObjectText" type="_2bOGULT1EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_tnVYYbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_tnVYYrUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tnVYY7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_uy4lgLUBEducWqnrbLfOMw" name="doors:Prefix" type="_b1lg8LT0EducWqnrbLfOMw">
+        <eAnnotations xmi:id="_uy4lgbUBEducWqnrbLfOMw" source="extended"/>
+        <eAnnotations xmi:id="_uy4lgrUBEducWqnrbLfOMw" source="fixed"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uy4lg7UBEducWqnrbLfOMw"/>
+      </ownedAttribute>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Class" xmi:id="_b1lg8LT0EducWqnrbLfOMw" name="String">
+      <generalization xmi:id="_kH58cLT0EducWqnrbLfOMw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+      </generalization>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Class" xmi:id="_lzI5wLT1EducWqnrbLfOMw" name="Integer">
+      <generalization xmi:id="_lzI5wbT1EducWqnrbLfOMw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_ZLHU8CwdEdmpCKM2fU6-Ng"/>
+      </generalization>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Class" xmi:id="_qtZ0ULT1EducWqnrbLfOMw" name="Real">
+      <generalization xmi:id="_qtZ0UbT1EducWqnrbLfOMw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_XLe_gCwdEdmpCKM2fU6-Ng"/>
+      </generalization>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Class" xmi:id="_2bOGULT1EducWqnrbLfOMw" name="Text">
+      <generalization xmi:id="_2bOGUbT1EducWqnrbLfOMw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+      </generalization>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Class" xmi:id="_5ce34LT1EducWqnrbLfOMw" name="Date">
+      <generalization xmi:id="_5ce34bT1EducWqnrbLfOMw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+      </generalization>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Class" xmi:id="_6xaqgLT1EducWqnrbLfOMw" name="CreatedThru">
+      <generalization xmi:id="_6xaqgbT1EducWqnrbLfOMw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+      </generalization>
+    </ownedMember>
+    <ownedMember xmi:type="uml:Class" xmi:id="_780GoLT1EducWqnrbLfOMw" name="Username">
+      <generalization xmi:id="_780GobT1EducWqnrbLfOMw">
+        <general xmi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+      </generalization>
+    </ownedMember>
+  </ownedMember>
+</uml:Model>

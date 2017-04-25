@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.transformer.module.rhapsody" 
+  name="IBM Rational Rhapsody Transformation Module" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="Rhapsody Module" 
+    name="Rhapsody Module" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="Rhapsody Module" 
+      label="IBM Rational Rhapsody Module"
+      version="1.2" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="rhapsody"
+      update="true"
+      id="com.ps.consul.ui.transform.rhapsody.module">
+      
+      <description>Triggers the transformation of IBM Rational Rhapsody file and server projects.</description>
+
+      <parameters>
+        <parameter name="Modus" type="ps:string" optional="false">
+        <description>Choose between the export modes. "Variant Project" copies the Rhapsody input project, including all variant-specific artefacts, to the given output file or Design Management stream. "Variant Enumeration" adds the current variant for selected Rhapsody elements to the element's enumeration tag.</description>          
+			<values>
+                <value default="yes">Variant Project</value>
+                <value>Variant Enumeration</value>
+            </values>
+        </parameter>
+        <parameter name="file" type="ps:path" optional="true">
+          <description>The Rhapsody Project name to transform.</description>
+        </parameter>
+        <parameter name="dir" type="ps:directory" optional="true">
+          <description>The absolute or relative (to $(INPUT)/$(OUTPUT)) directory of the Rhapsody Project.</description>
+        </parameter>
+        <parameter name="srcfile" type="ps:path" optional="true">
+          <description>The original Rhapsody Project name to transform.</description>
+        </parameter>
+        <parameter name="srcdir" type="ps:directory" optional="true">
+          <description>The absolute or relative (to $(INPUT)) directory of the Rhapsody Project.</description>
+        </parameter>
+        <parameter name="Username" type="ps:string" optional="true">
+          <description>The user name for the Design Management server account.</description>
+        </parameter>
+        <parameter name="Password" type="ps:string" optional="true">
+          <description>The user password for the Design Management server account.</description>
+        </parameter>
+        <parameter name="StreamName" type="ps:string" optional="true">
+          <description>The name of the variant stream. The default stream name is a concatenation of the variant name and the date and time the transformation was started.</description>
+          <default>$(VARIANT)_$(QUALIFIER)</default>
+        </parameter>
+        <parameter name="EnumerationName" type="ps:string" optional="true">
+          <description>The name of the tag that is used for "Variant Enumeration" mode. If the value is empty the standard name "pvVariants" is used.</description>
+          <default>pvVariants</default>
+        </parameter>
+        <parameter name="EnumerationCleanup" type="ps:boolean" optional="true">
+          <description>Clean up the variant enumeration tags by removing all variant names that are not part of the current transformation. (Only for "Variant Enumeration")</description>
+          <default>false</default>    
+        </parameter>
+        
+      </parameters>
+      
+    </module>
+    
+    <module 
+      deprecated="true" 
+      name="Rhapsody Module (for IBM Rhapsody 7.6.x)" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="rhapsody"
+      id="com.ps.consul.ui.transform.rhapsody.module.v76">
+      
+      <description>Triggers the transformation of a IBM Rational Rhapsody Project.</description>
+
+      <parameters>
+        <parameter name="file" type="ps:path" optional="true">
+          <description>The Rhapsody Project name to transform.</description>
+        </parameter>
+        <parameter name="dir" type="ps:directory" optional="true">
+          <description>The absolute or relative (to $(INPUT)/$(OUTPUT)) directory of the Rhapsody Project.</description>
+        </parameter>
+        <parameter name="srcfile" type="ps:path" optional="true">
+          <description>The original Rhapsody Project name to transform.</description>
+        </parameter>
+        <parameter name="srcdir" type="ps:directory" optional="true">
+          <description>The absolute or relative (to $(INPUT)) directory of the Rhapsody Project.</description>
+        </parameter>
+      </parameters>
+    </module>
+    
+  </extension>
+
+</plugin>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.eclipse.ui.doorsng.serverplugin" 
+  name="Doors NG Module Transformation" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="IBM Rational DOORS NG Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="doorsng"
+      update="true"
+      id="com.ps.consul.ui.doorsng.transform.module">
+      
+      <description>Triggers the transformation of the Doors NG Module.</description>
+      <parameters>
+        <parameter name="Username" type="ps:string" optional="true">
+          <description>The user name of your DOORS NG server account.</description>
+        </parameter>
+        <parameter name="Password" type="ps:string" optional="true">
+          <description>The password of your DOORS NG server account.</description>
+        </parameter>
+        <parameter name="VariantRoot" type="ps:string" optional="false">
+          <description>Path to Doors NG folder where the variant specific modules will be stored. (Only for "Copy with Duplicates" and "Copy with Links")</description>
+          <default>/variants</default>
+        </parameter>
+        <parameter name="Modus" type="ps:string" optional="false">
+            <description>Chose between the export modes.
+"Variant Enumeration" adds the current variant for selected requirements to the enumeration attribute.
+"Copy with Links" instantiates a new module including all variant specific requirements as links.
+"Copy with Duplicates" instantiates a new module including all variant specific requirements.
+"Create Streams" instantiates a new stream including all variant specific artefacts.</description>
+            <values>
+                <value default="yes">Variant Enumeration</value>
+                <value>Copy with Links</value>
+                <value>Copy with Duplicates</value>
+                <value>Create Streams</value>
+            </values>
+        </parameter>
+        <parameter name="StreamName" type="ps:string" optional="true">
+          <description>The name of the variant stream. The default stream name is a concatenation of the variant name and the date and time the transformation was started. (Only for "Create Streams")</description>
+          <default>$(VARIANT)_$(QUALIFIER)</default>
+        </parameter>
+        <parameter name="PerformPartialTextSubstitution" type="ps:boolean" optional="true">
+          <description>Perform partial text substitution (Only for "Copy with Duplicates" and "Create Streams")</description>
+          <default>false</default>
+        </parameter>
+        <parameter name="Name" type="ps:string" optional="true">
+          <description>The name of the enumeration attribute for "Variant Enumeration" mode. If the value is empty the standard name "pvVariants" is used.</description>
+        </parameter>
+        <parameter name="Cleanup" type="ps:boolean" optional="true">
+            <description>Clean up the variant attributes by removing all variant names, which are not part of the current transformation. (Only for "Variant Enumeration")</description>
+            <default>false</default>    
+        </parameter>
+      </parameters>
+    </module>
+  </extension>
+</plugin>

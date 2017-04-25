@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.eclipse.ui.mapping.ecore.clientmodule" 
+  name="Feature Mapper Transformation Module" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="EMF Feature Mapping Module" 
+    name="EMF Feature Mapping Module" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="EMF Feature Mapping Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      update="true"
+      id="com.ps.consul.eclipse.ui.mapping.ecore.clienttransformation.module">
+      
+      <description>Create Variants of Mapped Ecore Models during the pure::variants transformation.</description>
+
+      <parameters>
+        <!--parameter name="file" type="ps:path" optional="false">
+          <description>The Output file name.</description>
+        </parameter-->
+      </parameters>
+      
+    </module>
+    
+  </extension>
+
+</plugin>

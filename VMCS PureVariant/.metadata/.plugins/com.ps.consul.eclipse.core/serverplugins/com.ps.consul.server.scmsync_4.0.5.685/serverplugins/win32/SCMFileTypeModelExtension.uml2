@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmi:id="_QcaU0c4CEdm6RrfbiRQFbQ19">
+  <ownedMember xsi:type="uml:Package" xmi:id="_ZSmSYM4CEdm6RrfbiRQFbQ19" name="ps">
+    <ownedMember xsi:type="uml:Stereotype" xmi:id="_320psM4CEdm6RrfbiRQFbQ19" name="namespace"/>
+    <ownedMember xsi:type="uml:Class" xmi:id="_M5Z2MM4EEdm6RrfbiRQFbQ19" name="scmfile">
+      <generalization xmi:id="_M5Z2Mc4EEdm6RrfbiRQFbQ19">
+        <general xsi:type="uml:Class" href="TypeModel.uml2#_pvEH8KBnEdm6TtkefWMqlQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="__03J8NN2EdmGW5Hd7XFYCA19" name="module">
+        <eAnnotations xmi:id="_FK-rUNN9Edm8cOqGsRm00g19" source="extended"/>
+        <eAnnotations xmi:id="_8XmSkFtiEdqqF_CRnFAMlg19" source="fixed"/>
+        <ownedComment xmi:id="_TdcFYFtmEdqqF_CRnFAMlg19" body="Name of the SCM repository module containing the file."/>
+        <type xsi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_7294cFtnEdqqF_CRnFAMlg19"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JbGy4FtoEdqqF_CRnFAMlg19" name="branch">
+        <eAnnotations xmi:id="_JbGy4VtoEdqqF_CRnFAMlg19" source="extended"/>
+        <eAnnotations xmi:id="_JbGy4ltoEdqqF_CRnFAMlg19" source="fixed"/>
+        <ownedComment xmi:id="_JbGy41toEdqqF_CRnFAMlg19" body="Name of the SCM repository branch containing the file."/>
+        <type xsi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JbGy5FtoEdqqF_CRnFAMlg19"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_VX1qoFtoEdqqF_CRnFAMlg19" name="tag">
+        <eAnnotations xmi:id="_VX1qoVtoEdqqF_CRnFAMlg19" source="extended"/>
+        <eAnnotations xmi:id="_VX1qoltoEdqqF_CRnFAMlg19" source="fixed"/>
+        <ownedComment xmi:id="_VX1qo1toEdqqF_CRnFAMlg19" body="Name with what the file is tagged in the SCM repository."/>
+        <type xsi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_VX1qpFtoEdqqF_CRnFAMlg19"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LBXJkFtpEdqqF_CRnFAMlg19" name="version">
+        <eAnnotations xmi:id="_LBXJkVtpEdqqF_CRnFAMlg19" source="extended"/>
+        <eAnnotations xmi:id="_LBXJkltpEdqqF_CRnFAMlg19" source="fixed"/>
+        <ownedComment xmi:id="_LBXJk1tpEdqqF_CRnFAMlg19" body="Version of the file in the SCM repository."/>
+        <type xsi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_LBXJlFtpEdqqF_CRnFAMlg19"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RhG0MFtpEdqqF_CRnFAMlg19" name="date">
+        <eAnnotations xmi:id="_RhG0MVtpEdqqF_CRnFAMlg19" source="extended"/>
+        <eAnnotations xmi:id="_RhG0MltpEdqqF_CRnFAMlg19" source="fixed"/>
+        <ownedComment xmi:id="_RhG0M1tpEdqqF_CRnFAMlg19" body="Date specifying the version of the file in the SCM repository."/>
+        <type xsi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_RhG0NFtpEdqqF_CRnFAMlg19"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_bkPGAFtpEdqqF_CRnFAMlg19" name="repository">
+        <eAnnotations xmi:id="_bkPGAVtpEdqqF_CRnFAMlg19" source="extended"/>
+        <eAnnotations xmi:id="_bkPGAltpEdqqF_CRnFAMlg19" source="fixed"/>
+        <ownedComment xmi:id="_bkPGA1tpEdqqF_CRnFAMlg19" body="The SCM respository containing the file."/>
+        <type xsi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_bkPGBFtpEdqqF_CRnFAMlg19"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_9P_O8FtpEdqqF_CRnFAMlg19" name="workingdir">
+        <eAnnotations xmi:id="_9P_O8VtpEdqqF_CRnFAMlg19" source="extended"/>
+        <eAnnotations xmi:id="_9P_O8ltpEdqqF_CRnFAMlg19" source="fixed"/>
+        <ownedComment xmi:id="_9P_O81tpEdqqF_CRnFAMlg19" body="The local working directory containing the local copies of the files managed in the SCM repository."/>
+        <type xsi:type="uml:Class" href="TypeModel.uml2#_9Gs64CwPEdmdtOzN278pqQ"/>
+        <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_9P_O9FtpEdqqF_CRnFAMlg19"/>
+      </ownedAttribute>
+    </ownedMember>
+  </ownedMember>
+</uml:Model>

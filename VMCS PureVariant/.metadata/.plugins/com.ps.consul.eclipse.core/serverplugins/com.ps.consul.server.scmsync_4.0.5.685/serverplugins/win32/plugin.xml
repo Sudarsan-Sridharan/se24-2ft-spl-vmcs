@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.transformer.module.scmwrapper" 
+  name="pure::variants - Connector for Version Control Systems Server Plugin" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension point="com.ps.consul.typemodel.extension">
+    <typemodel location="SCMFileTypeModelExtension.uml2"/>
+  </extension>
+
+  <extension 
+    id="TransformerModules" 
+    name="Transformer Modules" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="scmwrapper" 
+      version="0.1" 
+      include="//cm:element[@cm:class='ps:source' and @cm:type='ps:scmfile']"
+      exclude=""
+      type="dll"
+      path="scmwrapper.dll">
+      
+      <description>Software configuration management wrapper for ps:scmfile source elements.</description>
+      
+      <parameters>
+        <parameter name="wrapper program" type="ps:path">
+          <description>SCM wrapper program call. Relative paths are
+relative to $(OUTPUT).
+
+Following variables can be used.
+Each variable starts with '$(' and ends with ')'.
+
+$(WORKSPACE):
+               The path to the directory containing all projects.
+$(PROJECT):
+               The path to the current project.
+$(INPUT):
+               The input path of the transformation.
+$(OUTPUT):
+               The output path of the transformation.
+$(MODULEBASE):
+               The module base path. Relative paths used in module
+               configurations are relative to this path.
+$(VARIANT):
+               The name of the transformed variant, i.e. the name
+               of the corresponding variant description model.</description>
+        </parameter>
+      </parameters>
+    </module>
+    
+  </extension>
+
+</plugin>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.eclipse.simulink.configurator.server" 
+  name="pure::variants Connector for Simulink Server Extensions" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="Simulink Transformation Modules" 
+    name="Simulink Transformation Modules" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="Simulink Configuration Propagation" 
+      label="Simulink Configuration Propagator" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      update="true"
+      image="matlab"
+      id="com.ps.consul.eclipse.simulink.configurator.server.propagation">
+      
+      <description>Propagate a variation point configuration to running Simulink instance.</description>
+
+      <parameters>
+        <parameter name="MATLAB/Simulink Host" type="ps:string" optional="true">
+          <description>The MATLAB/Simulink server location. Default value is localhost.</description>
+        </parameter>
+        <parameter name="MATLAB/Simulink Port" type="ps:string" optional="true">
+          <description>The MATLAB/Simulink server port. Default value is 1099.</description>
+        </parameter>
+      </parameters>
+    </module>
+    
+    <module 
+      name="Simulink Configuration Saving" 
+      label="Simulink Configuration m-File Writer" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      update="true"
+      image="matlab"
+      id="com.ps.consul.eclipse.simulink.configurator.server.saving">
+      
+      <description>Write a variation point configuration to a MATLAB/Simulink initialisation file (*.m).</description>
+
+      <parameters>
+        <parameter name="MATLAB/Simulink File" type="ps:string" optional="true">
+          <description>The MATLAB/Simulink file name. The file will be genereted to the $(OUTPUT) folder. If no file is given a file selection dialog will pop up.</description>
+        </parameter>
+      </parameters>
+    </module>
+    
+  </extension>
+
+</plugin>

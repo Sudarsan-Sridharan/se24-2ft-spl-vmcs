@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.eclipse.ui.transform.serverplugin" 
+  name="Sub Transformation Server Plugin" 
+  version="3.2.10" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="com.ps.consul.eclipse.ui.transform.sub" 
+    name="com.ps.consul.eclipse.ui.transform.sub" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="Reuse Transformation" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      id="com.ps.consul.eclipse.ui.transform.sub.module">
+      
+      <description>Reuse another transformation configuration as part of the current transformation.</description>
+
+      <parameters>
+      <parameter name="Triggered By" type="ps:string" optional="false">
+            <description>Define when the transformation configuration runs.</description>
+            <values>
+              <value>First VDM</value>
+              <value default="yes">Each VDM</value>
+              <value>Last VDM</value>
+            </values>
+        </parameter>
+        <parameter name="Transformation" type="ps:transformation" optional="false">
+          <description>The transformation configuration to reuse.</description>
+        </parameter>
+      </parameters>
+      
+    </module>
+
+    <module 
+      name="Ant Build Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="ant"
+      update="true"
+      id="com.ps.consul.eclipse.ui.transform.sub.ant">
+      
+      <description>Runs an Ant build file as part of the transformation.</description>
+      
+      <parameters>
+        <parameter name="Build File" type="ps:string" optional="false">
+          <description>The path to the Ant build file.</description>
+          <default>$(PROJECT)/build.xml</default>
+        </parameter>
+        <parameter name="Target" type="ps:string" optional="true">
+          <description>The target for the Ant build. If no
+target is given, the default target
+of the build file is used.</description>
+        </parameter>
+      </parameters>
+      
+    </module>
+    
+  </extension>
+
+</plugin>

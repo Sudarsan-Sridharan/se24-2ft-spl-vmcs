@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.transformer.module.office" 
+  name="Microsoft Office Transformation Module" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="Microsoft Office Module" 
+    name="Microsoft Office Module" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="Microsoft Word Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="word"
+      update="true"
+      id="com.ps.consul.ui.transform.office.module">
+      
+      <description>Triggers the transformation of Microsoft Word Documents.</description>
+
+      <parameters>
+        
+      </parameters>
+      
+    </module>
+    
+    <module 
+      name="Microsoft Excel Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="excel"
+      update="true"
+      id="com.ps.consul.ui.transform.office.excel.module">
+      
+      <description>Triggers the transformation of Microsoft Excel Workbooks.</description>
+      
+      <parameters>
+        
+      </parameters>
+      
+    </module>
+    
+  </extension>
+
+</plugin>

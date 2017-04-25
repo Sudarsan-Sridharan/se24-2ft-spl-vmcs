@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.transformer.module.doors" 
+  name="IBM Rational DOORS Module" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="IBM Rational DOORS Module" 
+    name="IBM Rational DOORS Module" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="IBM Rational DOORS Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="doors"
+      update="true"
+      id="com.ps.consul.ui.doors.transform.module">
+      
+      <description>Triggers the export of a variant description model to DOORS.</description>
+
+      <parameters>
+        <parameter name="CommunicationSettings" type="ps:string" optional="false">
+            <description>Communicate with DOORS server using TCP/IP or OLE connection. Unless special requirements use OLE.</description>
+            <values>
+                <value>TCP/IP</value>
+                <value default="yes">OLE</value>
+            </values>
+        </parameter>
+        <parameter name="TCPServerName" type="ps:string" optional="true">
+          <description>The name of pure::variants DOORS server for connection over TCP/IP.</description>
+        </parameter>
+        <parameter name="TCPServerPort" type="ps:integer" optional="true">
+          <description>The port of pure::variants DOORS server for connection over TCP/IP.</description>
+        </parameter>  
+        <parameter name="VariantRoot" type="ps:string" optional="false">
+          <description>Path to DOORS folder where the variant specific modules will be stored</description>
+        </parameter>
+        <parameter name="CopyModule" type="ps:boolean" optional="true">
+          <description>Copy master modules into folder "&lt;VariantRoot&gt;/&lt;VariantName&gt;"</description>
+          <default>true</default>
+        </parameter>
+        <parameter name="LinkToMaster" type="ps:boolean" optional="true">
+          <description>Link copied object to master object </description>
+          <default>false</default>
+        </parameter>
+        <parameter name="CopyBaselines" type="ps:boolean" optional="true">
+          <description>Export modules with imported baselines.</description>
+          <default>false</default>
+        </parameter>
+        <parameter name="PerformPartialTextSubstitution" type="ps:boolean" optional="true">
+          <description>Perform partial text substitution</description>
+          <default>false</default>
+        </parameter>
+        <parameter name="DeleteEmptyHeadings" type="ps:boolean" optional="true">
+          <description>Delete recursively all headings without non-heading children. Headings are all objects with object heading attribute set.</description>
+          <default>false</default>
+        </parameter>
+        <parameter name="CreateVariantModule" type="ps:boolean" optional="true">
+          <description>Create variant module at &quot;&lt;VariantRoot&gt;/&lt;VariantModule&gt;&quot;</description>
+          <default>false</default>
+        </parameter>
+        <parameter name="VariantModule" type="ps:string" optional="true">
+          <description>Path to DOORS module where the variant information will be stored (default "&lt;VariantRoot&gt;/Variants")</description>
+          <default>Variants</default>
+        </parameter>
+        <parameter name="UpdateMode" type="ps:string" optional="false">
+            <description>Defines the update mode if update support is enabled. AutoUpdate means all modules are updated automatically during the transformation. ManualUpdate means that the update has to be triggered in each module manually by the user.</description>
+            <values>
+                <value default="yes">AutoUpdate</value>
+                <value>ManualUpdate</value>
+            </values>
+        </parameter>
+      </parameters> 
+    </module>    
+  </extension>
+  
+  <extension 
+    id="IBM Rational DOORS Variant Column Module" 
+    name="IBM Rational DOORS Variant Column Module" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="IBM Rational DOORS Configuration Exporter" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="doors"
+      update="true"
+      id="com.ps.consul.ui.doors.transform.variant.column.module">
+      
+      <description>Triggers the export of a variant description model to DOORS.</description>
+
+      <parameters>
+        <parameter name="CommunicationSettings" type="ps:string" optional="false">
+            <description>Communicate with DOORS server using TCP/IP or OLE connection. Unless special requirements use OLE.</description>
+            <values>
+                <value>TCP/IP</value>
+                <value default="yes">OLE</value>
+            </values>
+        </parameter>
+        <parameter name="TCPServerName" type="ps:string" optional="true">
+          <description>The name of pure::variants DOORS server for connection over TCP/IP.</description>
+        </parameter>
+        <parameter name="TCPServerPort" type="ps:integer" optional="true">
+          <description>The port of pure::variants DOORS server for connection over TCP/IP.</description>
+        </parameter>  
+        <parameter name="Modus" type="ps:string" optional="false">
+            <description>Chose between the export modi.
+"Variant Enumeration" creates one enumeration attribute. For selected requirements the name of the current variant is selected in the enumeration.
+"Variant Matrix" creates an attribute for each variant. For selected requirements the value is set to "True", "False" otherwise.</description>
+            <values>
+                <value>Variant Enumeration</value>
+                <value default="yes">Variant Matrix</value>
+            </values>
+        </parameter>
+        <parameter name="Name" type="ps:string" optional="true">
+          <description>Content is used either as name of the enumeration attribute for modus "Variant Enumeration" or as prefix for the names of the single variant attributes in modus "Variant matrix".
+If is empty standard name "pvVariants" is used for enumeration. Single variant attributes will not be prefixed.</description>
+        </parameter>
+        <parameter name="Cleanup" type="ps:boolean" optional="true">
+          <description>Clean up the variant attributes by removing all variant names, which are not part of the current transformation.</description>
+          <default>false</default>
+        </parameter>
+      </parameters> 
+    </module>    
+  </extension>
+
+</plugin>

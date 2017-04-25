@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.eclipse.ui.transform.autosar.clientmodule" 
+  name="AUTOSAR Transformation Module" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="AUTOSAR Transformation Module" 
+    name="AUTOSAR Transformation Module" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="AUTOSAR Transformation Module" 
+      version="1.2" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="autosar"
+      update="true"
+      id="com.ps.consul.eclipse.ui.transform.autosar.clienttransformation.module">
+      
+      <description>Creates variants of AUTOSAR projects.</description>
+
+      <parameters>
+        <parameter name="mode" type="ps:string" optional="false">
+          <description>The mode for the transformation.
+"remove elements" will delete the objects with failed condition.
+"generate variation points" creates for every condition a system constant
+and a variantion point.</description>
+          <values>
+            <value default="yes">remove elements</value>
+            <value>generate variation points</value>
+          </values>
+        </parameter>
+        <parameter name="variant output" type="ps:path" optional="false">
+          <description>The output file for all variant data.
+This file contains all calculated system constant values.
+It also defines the predefined variants.
+(default "$(VARIANT).arxml")</description>
+          <default>$(VARIANT).arxml</default>
+        </parameter>
+        <parameter name="variant package" type="ps:string" optional="false">
+          <description>The package for the variant data.
+(default "Variants")</description>
+          <default>Variants</default>
+        </parameter>
+        <parameter name="system constants" type="ps:path" optional="false">
+          <description>The file for all by pure::variants generated system constants.
+System constants will be created only if transformation parameter
+"mode" is set to "generate variation points".
+(default "pvSystemConstants.arxml")</description>
+          <default>pvSystemConstants.arxml</default>
+        </parameter>
+        <parameter name="system constants package" type="ps:string" optional="false">
+          <description>The package for the generated system constants.
+(default "pv/SystemConstants")</description>
+          <default>pv/SystemConstants</default>
+        </parameter>
+        <parameter name="variant criterions package" type="ps:string" optional="false">
+          <description>The package for the generated variant criterions.
+(default "pv/VariantCriterions")</description>
+          <default>pv/VariantCriterions</default>
+        </parameter>
+        <parameter name="condition constant prefix" type="ps:string" optional="false">
+          <description>The prefix for all generated System Constants of Conditions.
+(default "PVC_")</description>
+          <default>PVC_</default>
+        </parameter>
+        <parameter name="dependency constant prefix" type="ps:string" optional="false">
+          <description>The prefix for all generated System Constants resulting
+from dependency chain analyses. (default "PVR_")</description>
+          <default>PVR_</default>
+        </parameter>
+      </parameters>
+      
+    </module>
+    
+  </extension>
+
+</plugin>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.transformer.module.sparxsea" 
+  name="Sparx System EA Transformation Module" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="Sparx System Enterprise Architect Module" 
+    name="Sparx System Enterprise Architect Module" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="Enterprise Architect Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="ea"
+      update="true"
+      id="com.ps.consul.ui.transform.sparxsea.module">
+      
+      <description>Triggers the transformation of a Sparx System Enterprise Architect Project.</description>
+
+      <parameters>
+        <parameter name="file" type="ps:path" optional="true">
+          <description>The Enterprise Architect Project name to transform.</description>
+        </parameter>
+        <parameter name="dir" type="ps:directory" optional="true">
+          <description>The absolute or relative (to $(INPUT)/$(OUTPUT)) directory of the Enterprise Architect Project.</description>
+        </parameter>
+        <parameter name="srcfile" type="ps:path" optional="true">
+          <description>The original Enterprise Architect Project name to transform.</description>
+        </parameter>
+        <parameter name="srcdir" type="ps:directory" optional="true">
+          <description>The absolute or relative (to $(INPUT)) directory of the Enterprise Architect Project.</description>
+        </parameter>
+      </parameters>
+      
+    </module>
+    
+  </extension>
+
+</plugin>

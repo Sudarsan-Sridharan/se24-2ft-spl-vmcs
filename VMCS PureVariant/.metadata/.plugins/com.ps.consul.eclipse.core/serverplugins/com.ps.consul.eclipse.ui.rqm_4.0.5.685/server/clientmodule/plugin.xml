@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+  id="com.ps.consul.eclipse.ui.rqm.serverplugin" 
+  name="Rational Quality Manager Transformation Module" 
+  version="1.0.0" 
+  provider-name="pure-systems GmbH">
+  
+  <extension 
+    id="com.ps.consul.eclipse.ui.rqm" 
+    name="com.ps.consul.eclipse.ui.rqm" 
+    point="com.ps.consul.transformer.module">
+    
+    <module 
+      name="IBM Rational Quality Manager Module" 
+      version="1.0" 
+      include="/variant"
+      exclude=""
+      type="client"
+      image="RQM_16"
+      update="true"
+      id="com.ps.consul.eclipse.ui.rqm.transform.module">
+      
+      <description>Triggers the transformation of the RQM Test Plans.</description>
+
+      <parameters>
+       <parameter name="Username" type="ps:string" optional="true">
+          <description>The user name of your Quality Manager server account.</description>
+        </parameter>
+        <parameter name="Password" type="ps:string" optional="true">
+          <description>The password of your Quality Manager server account.</description>
+        </parameter>
+      	<parameter name="StreamName" type="ps:string" optional="false">
+          <description>The name of the variant stream. The default stream name is a concatenation of the variant name and the date and time the transformation was started.</description>
+          <default>$(VARIANT)_$(QUALIFIER)</default>
+        </parameter>
+      </parameters>
+      
+    </module>
+    
+  </extension>
+
+</plugin>
