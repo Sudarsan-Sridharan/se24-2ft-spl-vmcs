@@ -18,6 +18,13 @@
       </cm:property>
     </cm:properties>
   </cm:head>
+  <cm:restrictions>
+    <cm:restset cm:id="i4ggWY_V_pzZbWHSR" cm:constraint="true">
+      <cm:restriction cm:id="iuNsVeCf8yD8eXsS3" cm:name="PaymentMethodMembershipAccount">
+        <cm:script cm:id="isoX1lNGhOgapjeOi" cm:language="ps:pvscl" cm:type="ps:boolean"></cm:script>
+      </cm:restriction>
+    </cm:restset>
+  </cm:restrictions>
   <cm:elements cm:rootid="i8ljsVK6UwNfrBhVA">
     <cm:element cm:id="i8ljsVK6UwNfrBhVA" cm:name="VMCSFeaturesFamily" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
       <cm:relations cm:id="iRculUBAOPcoTWpU7" cm:class="ps:children">
@@ -262,7 +269,7 @@
         <cm:mimedesc cm:id="iN1ozREyycnmfnCTQ" cm:mimetype="text/plain" cm:encoding="utf-8">Coin</cm:mimedesc>
       </cm:vname>
     </cm:element>
-    <cm:element cm:id="iqoXqsSLuDHw-tgCb" cm:name="MemberAccount" cm:type="ps:feature" cm:class="ps:feature">
+    <cm:element cm:id="iqoXqsSLuDHw-tgCb" cm:name="MemberAccount" cm:type="ps:feature" cm:class="ps:feature" cm:constraint="i4ggWY_V_pzZbWHSR">
       <cm:relations cm:id="iLmCKjDLX-D1oFATS" cm:class="ps:parents">
         <cm:relation cm:id="ipKKkcByamssqYlri" cm:type="ps:parent">
           <cm:target cm:id="i0_Tpj-0_-hqgHbby">./iCog3c4FI1PmE0Qd3</cm:target>
@@ -281,10 +288,10 @@
           <cm:constant cm:id="idMsP9A_e4sRMuEtS" cm:type="ps:datetime">2017-04-24T07:26:18.823Z</cm:constant>
         </cm:property>
         <cm:property cm:id="iSat9GRHWxrnqPA-X" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iiM59flDSiu6G57ZD" cm:type="ps:string">e0015290</cm:constant>
+          <cm:constant cm:id="iiM59flDSiu6G57ZD" cm:type="ps:string">e0015370</cm:constant>
         </cm:property>
         <cm:property cm:id="irg30mcPrHvy-N0Tl" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="irmYTc1XPtOEdXZdV" cm:type="ps:datetime">2017-04-24T07:56:17.408Z</cm:constant>
+          <cm:constant cm:id="irmYTc1XPtOEdXZdV" cm:type="ps:datetime">2017-04-25T10:04:03.281Z</cm:constant>
         </cm:property>
       </cm:properties>
       <cm:vname>
