@@ -31,6 +31,7 @@ import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import sg.edu.nus.iss.vmcs.membership.PayByMembershipButtonListener;
 import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 import sg.edu.nus.iss.vmcs.util.LabelledValue;
 import sg.edu.nus.iss.vmcs.util.WarningDisplay;
@@ -97,6 +98,9 @@ public class CustomerPanel extends Dialog {
     private LabelledValue lbdCollectCoins=new LabelledValue("Collect Coins:","0 C",50);
     private LabelledValue lbdCollectCan=new LabelledValue("Collect Can Here:","",100);
     
+    //For Advanced function
+    private Button btnPayByMembership= new Button("Pay by Membership Account");
+    
     /**
      * This constructor creates an instance of the Customer Panel&#46; It further
      * creates Invalid Coin Display, No Change Available Display, Refund/ Change
@@ -126,6 +130,11 @@ public class CustomerPanel extends Dialog {
 		coinInputBox.setActive(false);
 		drinkSelectionBox.setActive(true);
 		
+		//For Advanced Function
+		PayByMembershipButtonListener payByMembershipButtonListener = new PayByMembershipButtonListener(txCtrl);
+		btnPayByMembership.addActionListener(payByMembershipButtonListener);
+		btnPayByMembership.setEnabled(false);
+		
 		btnTerminate.addActionListener(terminateButtonListener);
 		
 		lblTitle.setAlignment(Label.CENTER);
@@ -143,6 +152,9 @@ public class CustomerPanel extends Dialog {
 			    new Insets(5,0,0,0),10,0));
 		pan0.add(lbdTotalMoneyInserted,new GridBagConstraints(0,3,0,1,0.0,0.0,
 			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+			    new Insets(5,0,0,0),10,0));
+		pan0.add(btnPayByMembership, new GridBagConstraints(0,6,0,1,0.0,0.0,
+			    GridBagConstraints.CENTER,GridBagConstraints.NONE,
 			    new Insets(5,0,0,0),10,0));
 		pan0.add(drinkSelectionBox,new GridBagConstraints(0,4,0,1,0.0,0.0,
 			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
@@ -320,6 +332,9 @@ public class CustomerPanel extends Dialog {
 	 */
 	public void setCoinInputBoxActive(boolean active){
 		coinInputBox.setActive(active);
+		
+		//For Advanced Function
+		btnPayByMembership.setEnabled(active);
 	}
 	
 	/**

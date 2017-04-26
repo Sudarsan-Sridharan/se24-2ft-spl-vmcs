@@ -28,8 +28,10 @@ public class MainController {
 	private MaintenanceController maintenanceCtrl;
 	private TransactionController txCtrl;
 	private StoreController       storeCtrl;
-	private MembershipController  membershipController;
 	private String      propertyFile;
+	
+	//For Advanced Function
+	private MembershipController  membershipController;
 
 	/**
 	 * This constructor creates an instance of MainController object.
@@ -78,12 +80,23 @@ public class MainController {
 			machineryCtrl.initialize();
 			maintenanceCtrl = new MaintenanceController(this);
 			txCtrl=new TransactionController(this);
+			
+			//For Advanced Function
 			membershipController = new MembershipController(txCtrl, membershipLoader);
 		} catch (IOException e) {
 			throw new VMCSException(
 				"MainController.initialize",
 				e.getMessage());
 		}
+	}
+	
+	
+	/**
+	 * This method returns the MembershipController for payment function
+	 * @return the MembershipController
+	 */
+	public MembershipController getMembershipController() {
+		return membershipController;
 	}
 
 	/**
