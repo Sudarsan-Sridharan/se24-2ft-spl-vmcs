@@ -134,6 +134,14 @@ public class MainController {
 		return txCtrl;
 	}
 
+
+	/**
+	 * This method returns the TransactionController.
+	 * @return the TransactionController.
+	 */
+	public MembershipController getMembershipController() {
+		return membershipController;
+	}
 	/**
 	 * This method destroys all the object instances created for opening the vending
 	 * machine&#46; It will instruct the SimulationController to close down (by closing

@@ -32,7 +32,7 @@ public class MembershipLoader extends FilePropertyLoader {
         String value_1 = getValue(name);
 
         String name_2 = new String(PWD_LABLE + idx);
-        String value_2 = getValue(name);
+        String value_2 = getValue(name_2);
 
         return new Member(value_1,value_2);
     }
