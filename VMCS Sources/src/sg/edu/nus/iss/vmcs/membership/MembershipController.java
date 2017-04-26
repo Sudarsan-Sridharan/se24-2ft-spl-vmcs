@@ -25,8 +25,8 @@ public class MembershipController {
     public boolean Login(Member member) {
         int memberSize = mloader.getNumOfItems();
         for(int i=0;i<memberSize;i++) {
-           if (mloader.getItem(i).userName == member.userName &&
-                    mloader.getItem(i).pwd == member.pwd) {
+           if (mloader.getItem(i).userName.equals(member.userName) &&
+                    mloader.getItem(i).pwd.equals(member.pwd) ) {
                this.logged = true;
                return true;
            }

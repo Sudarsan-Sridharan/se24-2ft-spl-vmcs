@@ -41,7 +41,9 @@ public class MembershipLoader extends FilePropertyLoader {
         return new Member(value_1,value_2,value_3);
     }
 
-    public void setItem(int index, StoreItem cashItem) {
-        return;
-    }
+	@Override
+	public void setItem(int index, StoreItem item) {
+		// TODO Auto-generated method stub
+		
+	}
 }
