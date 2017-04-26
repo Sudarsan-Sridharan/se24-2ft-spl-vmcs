@@ -59,7 +59,7 @@ public interface PropertyLoader {
 	 * @param index the index of the store item.
 	 * @return StoreItem the store item of the given index.
 	 */
-	public StoreItem getItem (int index);
+	public Object getItem (int index);
 
 	/**
 	 * This method updates the hash table with the data from the StoreItem.
