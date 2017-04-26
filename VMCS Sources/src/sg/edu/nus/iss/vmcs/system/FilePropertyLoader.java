@@ -88,7 +88,7 @@ public abstract class FilePropertyLoader implements PropertyLoader {
 	 * @param index the index of the StoreItem.
 	 * @return the store item of the given index.
 	 */
-	public abstract StoreItem getItem(int index);
+	public abstract Object getItem(int index);
 
 	/**
 	 * This method updates the hash table with data from the StoreItem.
