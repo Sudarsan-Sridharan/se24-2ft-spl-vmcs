@@ -98,7 +98,7 @@ public class CustomerPanel extends Dialog {
     private LabelledValue lbdCollectCoins=new LabelledValue("Collect Coins:","0 C",50);
     private LabelledValue lbdCollectCan=new LabelledValue("Collect Can Here:","",100);
     
-    //For Advanced function
+    //TODO: For Advanced function
     private Button btnPayByMembership= new Button("Pay by Membership Account");
     
     /**
@@ -130,7 +130,7 @@ public class CustomerPanel extends Dialog {
 		coinInputBox.setActive(false);
 		drinkSelectionBox.setActive(true);
 		
-		//For Advanced Function
+		//TODO: For Advanced Function
 		PayByMembershipButtonListener payByMembershipButtonListener = new PayByMembershipButtonListener(txCtrl);
 		btnPayByMembership.addActionListener(payByMembershipButtonListener);
 		btnPayByMembership.setEnabled(false);
@@ -153,8 +153,11 @@ public class CustomerPanel extends Dialog {
 		pan0.add(lbdTotalMoneyInserted,new GridBagConstraints(0,3,0,1,0.0,0.0,
 			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
 			    new Insets(5,0,0,0),10,0));
+
+		//TODO: For Advanced Function
 		pan0.add(btnPayByMembership, new GridBagConstraints(0,6,0,1,0.0,0.0,
 			    GridBagConstraints.CENTER,GridBagConstraints.NONE,
+
 			    new Insets(5,0,0,0),10,0));
 		pan0.add(drinkSelectionBox,new GridBagConstraints(0,4,0,1,0.0,0.0,
 			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
@@ -333,7 +336,7 @@ public class CustomerPanel extends Dialog {
 	public void setCoinInputBoxActive(boolean active){
 		coinInputBox.setActive(active);
 		
-		//For Advanced Function
+		//TODO: For Advanced Function
 		btnPayByMembership.setEnabled(active);
 	}
 	

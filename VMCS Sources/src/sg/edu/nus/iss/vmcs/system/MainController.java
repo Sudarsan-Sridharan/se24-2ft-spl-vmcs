@@ -30,7 +30,7 @@ public class MainController {
 	private StoreController       storeCtrl;
 	private String      propertyFile;
 	
-	//For Advanced Function
+	//TODO: For Advanced Function
 	private MembershipController  membershipController;
 
 	/**
@@ -81,7 +81,7 @@ public class MainController {
 			maintenanceCtrl = new MaintenanceController(this);
 			txCtrl=new TransactionController(this);
 			
-			//For Advanced Function
+			//TODO: For Advanced Function
 			membershipController = new MembershipController(txCtrl, membershipLoader);
 		} catch (IOException e) {
 			throw new VMCSException(
@@ -92,6 +92,7 @@ public class MainController {
 	
 	
 	/**
+	 * TODO: For Advanced Function
 	 * This method returns the MembershipController for payment function
 	 * @return the MembershipController
 	 */
