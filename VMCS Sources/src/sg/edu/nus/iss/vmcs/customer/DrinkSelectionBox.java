@@ -7,10 +7,9 @@
  */
 package sg.edu.nus.iss.vmcs.customer;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.Panel;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import sg.edu.nus.iss.vmcs.store.DrinksBrand;
 import sg.edu.nus.iss.vmcs.store.DrinksStoreItem;
@@ -19,6 +18,8 @@ import sg.edu.nus.iss.vmcs.store.StoreController;
 import sg.edu.nus.iss.vmcs.store.StoreItem;
 import sg.edu.nus.iss.vmcs.store.StoreObject;
 import sg.edu.nus.iss.vmcs.system.MainController;
+
+import javax.swing.*;
 
 /**
  * This interface object is part of the Customer Panel&#46; It is used by the Customer to select a drink.
@@ -55,10 +56,42 @@ public class DrinkSelectionBox extends Panel{
 			int drinksQuantity=drinksStoreItem.getQuantity();
 			drinkSelectionItems[i]=new DrinkSelectionItem(i,drinksName,drinksPrice,drinksQuantity,true,false);
 			drinkSelectionItems[i].addListener(new DrinkSelectionListener(txCtrl,i));
-			add(drinkSelectionItems[i],new GridBagConstraints(0,i,1,1,1.0,0.0,
+			add(drinkSelectionItems[i],new GridBagConstraints(0,i,2,1,1.0,0.0,
 				    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
 				    new Insets(5,0,0,0),10,0));  
 		}
+
+		/** TODO: Advanced Function **/
+        JTextField drinkSelectText = new JTextField(10);
+        add(new Label("Select Drink:"),new GridBagConstraints(0, drinkSelectionItems.length, 1, 1, 1.0, 0.0,
+                GridBagConstraints.EAST,GridBagConstraints.HORIZONTAL,
+                new Insets(5,0,0,0),10,0));
+        add(drinkSelectText,new GridBagConstraints(1, drinkSelectionItems.length, 1, 1, 5.0, 0.0,
+                GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+                new Insets(5,0,0,0),10,0));
+        drinkSelectText.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedDrink = drinkSelectText.getText();
+                drinkSelectText.setText("");
+                DrinkSelectionItem drinkSelectionItem = null;
+                for (int i = 0; i < drinkSelectionItems.length; i++) {
+                    DrinkSelectionItem item = drinkSelectionItems[i];
+                    if (selectedDrink.equals(item.getName())) {
+                        if (!item.getItemState()) {
+                            drinkSelectionItem = item;
+                            break;
+                        }
+                    }
+                }
+                if (drinkSelectionItem != null) {
+                    txCtrl.startTransaction(drinkSelectionItem.getDrinkIdentifier());
+                    drinkSelectionItem.setButtonBackground(Color.yellow);
+                }
+                System.out.println(">>> Selected Drink: " + selectedDrink);
+            }
+        });
+
 	}
 	
 	/**

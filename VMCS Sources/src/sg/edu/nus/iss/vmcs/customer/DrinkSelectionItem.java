@@ -55,7 +55,7 @@ public class DrinkSelectionItem extends Panel{
 	 * This method initialize the GUI.
 	 */
 	private void init(){
-	    /** For Advanced Function*/
+	    /** TODO: For Advanced Function*/
         try {
             Image img = ImageIO.read(new File("resources/" + name + ".png"));
             btn.setIcon(new ImageIcon(img));
@@ -208,4 +208,12 @@ public class DrinkSelectionItem extends Panel{
 	public boolean getState() {
 		return isActive;
 	}
+
+    /**
+     * TODO: Advanced Function
+     * Set background color of the button
+     */
+    public void setButtonBackground(Color bg) {
+        btn.setBackground(bg);
+    }
 }//End of class DrinkSelectionItem
