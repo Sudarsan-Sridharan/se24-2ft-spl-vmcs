@@ -7,17 +7,15 @@
  */
 package sg.edu.nus.iss.vmcs.customer;
 
-import java.awt.Button;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.Label;
-import java.awt.Panel;
+import java.awt.*;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.nio.file.Path;
 
 import sg.edu.nus.iss.vmcs.util.WarningDisplay;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
 
 /**
  * This boundary object enables a drink to be displayed and selected&#46; 
@@ -26,7 +24,7 @@ import sg.edu.nus.iss.vmcs.util.WarningDisplay;
  * @version 1.0 2008-10-01
  */
 public class DrinkSelectionItem extends Panel{
-	private Button btn=new Button("");
+	private JButton btn=new JButton("");
 	private Label lbl=new Label();
 	private WarningDisplay wnd=new WarningDisplay("Not in Stock");
 	
@@ -57,7 +55,16 @@ public class DrinkSelectionItem extends Panel{
 	 * This method initialize the GUI.
 	 */
 	private void init(){
-		btn.setLabel(name);
+	    /** For Advanced Function*/
+        try {
+            Image img = ImageIO.read(new File("resources/" + name + ".png"));
+            btn.setIcon(new ImageIcon(img));
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+
+        btn.setOpaque(true);
+		btn.setText(name);
 		lbl.setText(""+price+" C");
 		
 		lbl.setBackground(Color.lightGray);

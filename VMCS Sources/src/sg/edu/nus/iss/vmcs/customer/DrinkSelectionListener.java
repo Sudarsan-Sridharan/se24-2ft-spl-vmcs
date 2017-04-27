@@ -7,6 +7,7 @@
  */
 package sg.edu.nus.iss.vmcs.customer;
 
+import javax.swing.*;
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -35,7 +36,7 @@ public class DrinkSelectionListener implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent ev){
 		Object obj=ev.getSource();
-		Button btn=(Button)obj;
+		JButton btn=(JButton)obj;
 		btn.requestFocus();
 		txCtrl.startTransaction(drinkIdentifier);
 		btn.setBackground(Color.yellow);
