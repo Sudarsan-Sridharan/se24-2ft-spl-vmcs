@@ -16,7 +16,10 @@ import java.awt.Insets;
 import java.awt.Label;
 import java.awt.Panel;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
+import sg.edu.nus.iss.vmcs.system.Environment;
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.util.WarningDisplay;
 
 /**
@@ -28,8 +31,12 @@ import sg.edu.nus.iss.vmcs.util.WarningDisplay;
 public class DrinkSelectionItem extends Panel{
 	private Button btn=new Button("");
 	private Label lbl=new Label();
-	private WarningDisplay wnd=new WarningDisplay("Not in Stock");
-	
+
+	//changed for language variant
+	//private WarningDisplay wnd=new WarningDisplay("Not in Stock");
+	private LanguagePropertyLoader languagePropertyLoader;
+	private WarningDisplay wnd;
+
 	private int drinkIdentifier=-1;
 	private String name="";
 	private int price=0;
@@ -45,6 +52,18 @@ public class DrinkSelectionItem extends Panel{
 	 * @param isActive the active status of the drink&#46;
 	 */
 	public DrinkSelectionItem(int drinkIdentifier, String drinkName, int drinkPrice, int quantity, boolean isActive, boolean isWarningOn){
+
+		//added for language variant
+		languagePropertyLoader=
+				new LanguagePropertyLoader(Environment.getLanguagePropFile());
+		try {
+			languagePropertyLoader.initialize();
+			wnd=new WarningDisplay(languagePropertyLoader.getValue("NotinStock"));
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 		this.setDrinkIdentifier(drinkIdentifier);
 		this.setName(drinkName);
 		this.setPrice(drinkPrice);

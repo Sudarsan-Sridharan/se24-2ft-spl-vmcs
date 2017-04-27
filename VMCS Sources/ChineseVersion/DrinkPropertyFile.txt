@@ -1,11 +1,11 @@
 #
-#Thu Apr 27 15:42:57 SGT 2017
-Name6=Soya Bean
-Name5=Coca-Cola
-Name4=Soya Bean
-Name3=Sarsi
-Name2=Fanta
-Name1=Coca-Cola
+#Thu Apr 27 13:55:21 SGT 2017
+Name6=豆奶
+Name5=可口可乐
+Name4=豆奶
+Name3=沙士
+Name2=芬达
+Name1=可口可乐
 NumOfItems=6
 Quantity6=0
 Quantity5=3

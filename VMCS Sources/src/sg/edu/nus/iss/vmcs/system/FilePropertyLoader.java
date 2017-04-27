@@ -47,10 +47,20 @@ public abstract class FilePropertyLoader implements PropertyLoader {
 	 * @throws IOException if fail to load properties from properties file.
 	 */
 	public void initialize() throws IOException {
+
+		//changed for language variant
+		/*
 		prop = new Properties(System.getProperties());
 		FileInputStream stream = new FileInputStream(fileName);
 		prop.load(stream);
 		stream.close();
+		*/
+		prop = new Properties();
+		//InputStream inputStream = this.getClass().getResourceAsStream("fileName");
+		FileInputStream inputStream = new FileInputStream(fileName);
+		BufferedReader bf = new BufferedReader(new InputStreamReader(inputStream));
+		prop.load(bf);
+		inputStream.close();
 	}
 
 	/**

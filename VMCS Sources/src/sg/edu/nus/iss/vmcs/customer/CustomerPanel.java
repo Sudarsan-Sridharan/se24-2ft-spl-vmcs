@@ -31,6 +31,7 @@ import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 import sg.edu.nus.iss.vmcs.util.LabelledValue;
 import sg.edu.nus.iss.vmcs.util.WarningDisplay;
@@ -85,6 +86,8 @@ public class CustomerPanel extends Dialog {
 	private static final String TITLE = "Customer Panel";
 	private TransactionController txCtrl;
 
+	//changed for language variant
+	/*
 	private Panel pan0=new Panel();
     private Label lblTitle=new Label("VMCS Soft Drinks Dispenser");
     private Label lblEnterCoins=new Label("Enter Coins Here");
@@ -96,6 +99,21 @@ public class CustomerPanel extends Dialog {
     private Button btnTerminate=new Button("Terminate and Return Cash");
     private LabelledValue lbdCollectCoins=new LabelledValue("Collect Coins:","0 C",50);
     private LabelledValue lbdCollectCan=new LabelledValue("Collect Can Here:","",100);
+	*/
+	private Panel pan0=new Panel();
+	private Label lblTitle;
+	private Label lblEnterCoins;
+	private CoinInputBox coinInputBox;
+	private DrinkSelectionBox drinkSelectionBox;
+	private WarningDisplay wndInvalidCoin;
+	private LabelledValue lbdTotalMoneyInserted;
+	private WarningDisplay wndNoChangeAvailable;
+	private Button btnTerminate;
+	private LabelledValue lbdCollectCoins;
+	private LabelledValue lbdCollectCan;
+
+	//added for language variant
+	private LanguagePropertyLoader languagePropertyLoader;
     
     /**
      * This constructor creates an instance of the Customer Panel&#46; It further
@@ -110,7 +128,18 @@ public class CustomerPanel extends Dialog {
 		super(fr, TITLE, false);
 		
 		txCtrl = ctrl;
-		
+
+		//added for language variant
+		languagePropertyLoader=txCtrl.getMainController().getLanguagePropertyLoader();
+		lblTitle=new Label(languagePropertyLoader.getValue("VMCSSoftDrinksDispenser"));
+		lblEnterCoins=new Label(languagePropertyLoader.getValue("lblEnterCoins"));
+		wndInvalidCoin=new WarningDisplay(languagePropertyLoader.getValue("wndInvalidCoin"));
+		lbdTotalMoneyInserted=new LabelledValue(languagePropertyLoader.getValue("lbdTotalMoneyInserted"),"0 C",50);
+		wndNoChangeAvailable=new WarningDisplay(languagePropertyLoader.getValue("wndNoChangeAvailable"));
+		btnTerminate=new Button(languagePropertyLoader.getValue("btnTerminate"));
+		lbdCollectCoins=new LabelledValue(languagePropertyLoader.getValue("lbdCollectCoins"),"0 C",50);
+		lbdCollectCan=new LabelledValue(languagePropertyLoader.getValue("lbdCollectCan"),"",100);
+
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent ev) {
 				txCtrl.getMainController().getSimulatorControlPanel().setButtonState(SimulatorControlPanel.ACT_CUSTOMER,true);

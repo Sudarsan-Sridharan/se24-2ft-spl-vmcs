@@ -8,8 +8,11 @@
 package sg.edu.nus.iss.vmcs.machinery;
 
 import java.awt.*;
+import java.io.IOException;
 
 import sg.edu.nus.iss.vmcs.store.*;
+import sg.edu.nus.iss.vmcs.system.Environment;
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.util.*;
 
 /**
@@ -22,13 +25,19 @@ import sg.edu.nus.iss.vmcs.util.*;
 public class StoreViewer extends Panel {
 	private LabelledDisplay viewItems[];
 	private StoreController storeCtrl;
+
+	//added for language variant
+	private LanguagePropertyLoader languagePropertyLoader;
 	
 	private int type;
-	
+
+	//changed for language variant
 	/**This constant attribute holds the cash view title*/
-	public static final String CASH_VIEW_TITLE = "Quantity of Coins Available";
+	//public static final String CASH_VIEW_TITLE = "Quantity of Coins Available";
 	/**This constant attribute holds the drink view title*/
-	public static final String DRINK_VIEW_TITLE = "Quantity of Drinks Available";
+	//public static final String DRINK_VIEW_TITLE = "Quantity of Drinks Available";
+	public String CASH_VIEW_TITLE ;
+	public String DRINK_VIEW_TITLE;
 
 	/**
 	 * This constructor creates an instance of StoreViewer object.
@@ -39,7 +48,19 @@ public class StoreViewer extends Panel {
 		
 		storeCtrl = sctrl;
 		type = ti;
-		
+
+		//added for language variant
+		this.languagePropertyLoader=
+				new LanguagePropertyLoader(Environment.getLanguagePropFile());
+		try {
+			languagePropertyLoader.initialize();
+			CASH_VIEW_TITLE=languagePropertyLoader.getValue("CASH_VIEW_TITLE");
+			DRINK_VIEW_TITLE=languagePropertyLoader.getValue("DRINK_VIEW_TITLE");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 		String title = null;
 		switch (type) {
 		case Store.CASH:

@@ -30,6 +30,9 @@ public class MainController {
 
 	private String      propertyFile;
 
+	//added for language variant
+	private LanguagePropertyLoader languagePropertyLoader;
+
 	/**
 	 * This constructor creates an instance of MainController object.
 	 * @param propertyFile the property file name.
@@ -65,8 +68,18 @@ public class MainController {
 				new CashPropertyLoader(Environment.getCashPropFile());
 			DrinkPropertyLoader drinksLoader =
 				new DrinkPropertyLoader(Environment.getDrinkPropFile());
+
+			//added for language variant
+			languagePropertyLoader=
+					new LanguagePropertyLoader(Environment.getLanguagePropFile());
+
 			cashLoader.initialize();
 			drinksLoader.initialize();
+
+			//added for language variant
+			languagePropertyLoader.initialize();
+			//System.out.println(languageLoader.getValue("L_SIMUL_BEGIN"));
+
 			storeCtrl = new StoreController(cashLoader, drinksLoader);
 			storeCtrl.initialize();
 			simulatorCtrl = new SimulationController(this);
@@ -80,6 +93,12 @@ public class MainController {
 				e.getMessage());
 		}
 	}
+
+	//added for language variant
+	public LanguagePropertyLoader getLanguagePropertyLoader(){
+		return this.languagePropertyLoader;
+	}
+
 
 	/**
 	 * This method returns the SimulationController.
