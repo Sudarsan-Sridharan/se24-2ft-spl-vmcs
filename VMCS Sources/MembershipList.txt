@@ -1,15 +1,15 @@
 #
-#Wed Apr 26 02:08:57 CST 2017
-Name4=Tran
-Name3=Gao
-Name2=Chen
-Name1=Wang
-NumOfItems=4
-Password4=123
-Password3=123
-Password2=123
-Password1=123
-Balance4=2
-Balance3=2
+#Thu Apr 27 17:31:09 SGT 2017
+Balance3=1.35
 Balance2=0.6
 Balance1=0.5
+Name4=Tran
+Name3=Gao
+Password4=123
+Name2=Chen
+Password3=123
+Name1=Wang
+Password2=123
+Password1=123
+NumOfItems=4
+Balance4=0.0

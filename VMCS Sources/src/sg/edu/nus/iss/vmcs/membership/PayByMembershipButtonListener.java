@@ -23,5 +23,6 @@ public class PayByMembershipButtonListener implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent ev){
 		System.out.println(">>> Trigger Membership Controller");
+		mbCtrl.displayMembershipPanel();
 	}
 }

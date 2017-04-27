@@ -24,6 +24,7 @@ public class Environment {
 	/**This constant attribute identify the cash property filename*/
 	public final static String CASH_PROP_FILE = "cashFile";
 	/**This constant attribute identify the cash property filename*/
+	//For Advanced Function
 	public final static String MEMBER_SHIP_FILE = "membership";
 	/**This constant attribute denotes the password string*/
 	public final static String PASSWORD = "password";
@@ -68,8 +69,8 @@ public class Environment {
 	}
 
 	/**
-	 * This method returns the name/ location of the CashStore properties file.
-	 * @return the mane of the CashStore properties file.
+	 * This method returns the name/ location of the Membership properties file.
+	 * @return the mane of the Membership properties file.
 	 */
 	public static String getMemberShipFile() {
 		String fn;

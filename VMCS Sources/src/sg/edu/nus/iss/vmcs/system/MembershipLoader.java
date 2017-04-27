@@ -38,7 +38,20 @@ public class MembershipLoader extends FilePropertyLoader {
         String name_3 = new String(BALANCE_LABEL + idx);
         String value_3 = getValue(name_3);
 
-        return new Member(value_1,value_2,value_3);
+        return new Member(idx, value_1, value_2, value_3);
+    }
+
+    public void setMember(Member member) {
+        int idx = member.getIndex();
+
+        String name_1 = new String(NAME_LABEL + idx);
+        setValue(name_1, member.getUserName());
+
+        String name_2 = new String(PWD_LABLE + idx);
+        setValue(name_2, member.getPwd());
+
+        String name_3 = new String(BALANCE_LABEL + idx);
+        setValue(name_3, Float.toString(member.getBalance()));
     }
 
 	@Override

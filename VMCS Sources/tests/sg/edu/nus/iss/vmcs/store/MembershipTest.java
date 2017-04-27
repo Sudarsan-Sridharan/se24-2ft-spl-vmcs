@@ -22,7 +22,7 @@ public class MembershipTest extends TestCase {
 
     @Test
     public void testLogin_1() throws Exception {
-        Member mem = new Member("Gao", "123");
+        Member mem = new Member("Gao", "123", "2");
         MainController mainCtrl=new MainController("vmcs.properties");
         mainCtrl.initialize();
         MembershipController membershipController=mainCtrl.getMembershipController();
@@ -31,7 +31,7 @@ public class MembershipTest extends TestCase {
 
     @Test
     public void testLogin_2() throws Exception {
-        Member mem = new Member("Tran", "123");
+        Member mem = new Member("Tran", "123", "2");
         MainController mainCtrl=new MainController("vmcs.properties");
         mainCtrl.initialize();
         MembershipController membershipController=mainCtrl.getMembershipController();
@@ -40,7 +40,7 @@ public class MembershipTest extends TestCase {
 
     @Test
     public void testLogin_3() throws Exception {
-        Member mem = new Member("Wang", "123");
+        Member mem = new Member("Wang", "123", "2");
         MainController mainCtrl=new MainController("vmcs.properties");
         mainCtrl.initialize();
         MembershipController membershipController=mainCtrl.getMembershipController();
@@ -49,7 +49,7 @@ public class MembershipTest extends TestCase {
 
     @Test
     public void testLogin_4() throws Exception {
-        Member mem = new Member("Chen", "123");
+        Member mem = new Member("Chen", "123", "2");
         MainController mainCtrl=new MainController("vmcs.properties");
         mainCtrl.initialize();
         MembershipController membershipController=mainCtrl.getMembershipController();

@@ -4,6 +4,8 @@ package sg.edu.nus.iss.vmcs.membership;
  * Created by Administrator on 2017/4/26.
  */
 public class Member {
+    /**This attribute hold the index of the item inside the list*/
+    protected int index;
     /**This attribute hold the unique user name of the Member*/
     protected String userName;
     /**This attribute hold the password of the Member*/
@@ -14,21 +16,18 @@ public class Member {
     /**
      * This constructor creates an instance of Member object.
      */
-    public Member(String userName, String pwd, float balance) {
+    public Member(String userName, String pwd, String balance) {
+        this(0, userName, pwd, balance);
+    }
+    public Member(int index, String userName, String pwd, float balance) {
+        this.index = index;
     	this.userName = userName;
     	this.pwd = pwd;
     	this.balance = balance;
     }
     
-    public Member(String userName, String pwd, String balance) {
-    	this(userName, pwd, Float.parseFloat(balance));
-    }
-
-    /**
-     * This constructor creates an instance of Member object.
-     */
-    public Member(String n, String pd) {
-        this(n, pd, 0);
+    public Member(int index, String userName, String pwd, String balance) {
+    	this(index, userName, pwd, Float.parseFloat(balance));
     }
 
     /**
@@ -51,8 +50,29 @@ public class Member {
 		return balance;
 	}
 
-	public void setBalance(float balance) {
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setBalance(float balance) {
 		this.balance = balance;
 	}
-    
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "index=" + index +
+                ", userName='" + userName + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
