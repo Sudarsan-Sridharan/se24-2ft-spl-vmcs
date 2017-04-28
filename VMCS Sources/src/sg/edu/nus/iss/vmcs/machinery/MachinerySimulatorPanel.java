@@ -11,6 +11,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 import sg.edu.nus.iss.vmcs.store.*;
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 
 /**
@@ -37,6 +38,9 @@ public class MachinerySimulatorPanel extends Dialog {
 	private StoreController storeCtrl;
 	private MachineryController machineryCtrl;
 
+	//added for language property
+	private LanguagePropertyLoader languagePropertyLoader;
+
 	/**
 	 * This constructor creates an instance of MachinerySimulatorPanel.
 	 * @param fr the parent frame.
@@ -47,6 +51,9 @@ public class MachinerySimulatorPanel extends Dialog {
 
 		machineryCtrl = machCtrl;
 		storeCtrl = machineryCtrl.getMainController().getStoreController();
+
+		//added for language variant
+		languagePropertyLoader=machineryCtrl.getMainController().getLanguagePropertyLoader();
 
 		Label lb = new Label(TITLE);
 		lb.setFont(new Font("Helvetica", Font.BOLD, 24));
@@ -63,7 +70,11 @@ public class MachinerySimulatorPanel extends Dialog {
 		Panel dp = new Panel();
 		doorDisplay = new Checkbox();
 		doorDisplay.addItemListener(new DoorListener(machineryCtrl));
-		doorDisplay.setLabel("Door Locked");
+
+		//changed for language variant
+		//doorDisplay.setLabel("Door Locked");
+		doorDisplay.setLabel(languagePropertyLoader.getValue("DoorLocked"));
+
 		dp.add(doorDisplay);
 
 		this.setLayout(new BorderLayout());

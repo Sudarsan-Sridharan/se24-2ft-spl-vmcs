@@ -10,6 +10,7 @@ package sg.edu.nus.iss.vmcs.maintenance;
 import java.awt.*;
 
 import sg.edu.nus.iss.vmcs.store.*;
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.util.*;
 
 /**
@@ -22,13 +23,18 @@ import sg.edu.nus.iss.vmcs.util.*;
  * @author Olivo Miotto, Pang Ping Li
  */
 public class DrinkDisplay extends Panel {
-	public final static String TITLE = "Quantity of Drinks Available";
+	//changed for language variant
+	//public final static String TITLE = "Quantity of Drinks Available";
+	public String TITLE;
 
 	private StoreController storeCtrl;
 	private MaintenanceController mCtrl;
 	private ButtonItemDisplay bi;
 	private LabelledDisplay price;
 	private int curIdx; //current displayed item index;
+
+	//added for language variant
+	private LanguagePropertyLoader languagePropertyLoader;
 
 	/**
 	 * This constructor creates an instance of the DrinkDisplay object.
@@ -37,6 +43,10 @@ public class DrinkDisplay extends Panel {
 	public DrinkDisplay(MaintenanceController mctrl) {
 		mCtrl = mctrl;
 		storeCtrl = mCtrl.getMainController().getStoreController();
+
+		//added for language variant
+		this.languagePropertyLoader=mCtrl.getMainController().getLanguagePropertyLoader();
+		TITLE=languagePropertyLoader.getValue("DRINK_VIEW_TITLE");
 
 		this.setLayout(new BorderLayout());
 		int len;

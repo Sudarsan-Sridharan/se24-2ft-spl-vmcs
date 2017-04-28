@@ -52,6 +52,10 @@ public class StoreController {
 	public void initialize() throws IOException {
 		cStore = new CashStore();
 		dStore = new DrinksStore();
+
+		//added for language property
+
+
 		initializeStores();
 	}
 

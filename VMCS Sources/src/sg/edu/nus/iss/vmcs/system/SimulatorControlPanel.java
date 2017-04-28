@@ -50,11 +50,21 @@ public class SimulatorControlPanel extends Frame {
 
     private static final String title = "Simulation Control Panel";
 
+    //changed for language variant
+    private LanguagePropertyLoader languagePropertyLoader;
+    private String L_SIMUL_BEGIN    ;
+    private String L_SIMUL_END      ;
+    private String L_ACT_MAINTAINER ;
+    private String L_ACT_MACHINERY  ;
+    private String L_ACT_CUSTOMER  ;
+    /*
     private static final String L_SIMUL_BEGIN    = "Begin Simulation";
     private static final String L_SIMUL_END      = "End Simulation";
     private static final String L_ACT_MAINTAINER = "Activate Maintainer Panel";
     private static final String L_ACT_MACHINERY  = "Activate Machinery Panel";
     private static final String L_ACT_CUSTOMER  = "Activate Customer Panel";
+    */
+
 
     private MainController          mainCtrl;
     private SimulationController    simulationCtrl;
@@ -73,6 +83,14 @@ public class SimulatorControlPanel extends Frame {
 
         this.simulationCtrl = controller;
         this.mainCtrl = simulationCtrl.getMainController();
+
+        //added for language variant
+        this.languagePropertyLoader=mainCtrl.getLanguagePropertyLoader();
+        this.L_SIMUL_BEGIN=languagePropertyLoader.getValue("L_SIMUL_BEGIN");
+        this.L_SIMUL_END=languagePropertyLoader.getValue("L_SIMUL_END");
+        this.L_ACT_MAINTAINER=languagePropertyLoader.getValue("L_ACT_MAINTAINER");
+        this.L_ACT_MACHINERY=languagePropertyLoader.getValue("L_ACT_MACHINERY");
+        this.L_ACT_CUSTOMER=languagePropertyLoader.getValue("L_ACT_CUSTOMER");
 
         setLayout(new GridLayout(0, 1));
 

@@ -20,6 +20,7 @@ import java.awt.Panel;
 import java.awt.Toolkit;
 
 import sg.edu.nus.iss.vmcs.store.Store;
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.util.LabelledDisplay;
 import sg.edu.nus.iss.vmcs.util.VMCSException;
 import sg.edu.nus.iss.vmcs.util.WarningDisplay;
@@ -73,6 +74,9 @@ public class MaintenancePanel extends Dialog {
 	private WarningDisplay invalidPswd;
 	private MaintenanceController mctrl;
 
+	//added for language variant
+	private LanguagePropertyLoader languagePropertyLoader;
+
 	/**
 	 * This constructor creates an instance of MaintenancePanel object.
 	 * @param fr the parent frame.
@@ -83,6 +87,10 @@ public class MaintenancePanel extends Dialog {
 
 		mctrl = mc;
 
+		//added for language variant
+		this.languagePropertyLoader=mctrl.getMainController().getLanguagePropertyLoader();
+
+
 		// north part
 		Label lb = new Label(TITLE);
 		lb.setFont(new Font("Helvetica", Font.BOLD, 24));
@@ -92,13 +100,21 @@ public class MaintenancePanel extends Dialog {
 		Panel tpn = new Panel();
 		tpn.setLayout(new GridLayout(0, 1));
 
-		password = new LabelledDisplay("Password:", 30, LabelledDisplay.FLOW);
+		//changed for language variant
+		//password = new LabelledDisplay("Password:", 30, LabelledDisplay.FLOW);
+		password = new LabelledDisplay(languagePropertyLoader.getValue("Password"), 30, LabelledDisplay.FLOW);
+
 		PasswordListener pl = new PasswordListener(mc.getAccessManager());
 		password.addListener(pl);
 
 		Panel tp3 = new Panel();
-		validPswd = new WarningDisplay("Valid Password");
-		invalidPswd = new WarningDisplay("Invalid Password");
+
+		//changed for language variant
+		//validPswd = new WarningDisplay("Valid Password");
+		//invalidPswd = new WarningDisplay("Invalid Password");
+		validPswd = new WarningDisplay(languagePropertyLoader.getValue("ValidPassword"));
+		invalidPswd = new WarningDisplay(languagePropertyLoader.getValue("InvalidPassword"));
+
 		tp3.add(validPswd);
 		tp3.add(invalidPswd);
 		tpn.add(tp1);
@@ -115,22 +131,35 @@ public class MaintenancePanel extends Dialog {
 		Panel tp5 = new Panel();
 		tp5.setLayout(new GridLayout(0, 1));
 
-		totalCash = new ButtonItem("Show Total Cash Held", 5, ButtonItem.FLOW);
+		//changed for language variant
+		//totalCash = new ButtonItem("Show Total Cash Held", 5, ButtonItem.FLOW);
+		totalCash = new ButtonItem(languagePropertyLoader.getValue("ShowTotalCashHeld"), 5, ButtonItem.FLOW);
+
 		TotalCashButtonListener tl;
 
 		tl = new TotalCashButtonListener(mctrl);
 		totalCash.addListener(tl);
 
-		transferCash = new Button("Press to Collect All Cash");
+		//changed for language variant
+		//transferCash = new Button("Press to Collect All Cash");
+		transferCash = new Button(languagePropertyLoader.getValue("PresstoCollectAllCash"));
+
 		transferCash.addActionListener(new TransferCashButtonListener(mctrl));
 
 		Panel tp6 = new Panel();
 		tp6.setLayout(new FlowLayout());
 		tp6.add(transferCash);
 
+		//changed for language variant
+		/*
 		collectCash =
 			new LabelledDisplay("Collect Cash:", 5, LabelledDisplay.FLOW);
 		exitBtn = new Button("Press Here when Finished");
+		*/
+		collectCash =
+				new LabelledDisplay(languagePropertyLoader.getValue("CollectCash"), 5, LabelledDisplay.FLOW);
+		exitBtn = new Button(languagePropertyLoader.getValue("PressHerewhenFinished"));
+
 		exitBtn.addActionListener(new ExitButtonListener(mctrl));
 
 		tp5.add(totalCash);

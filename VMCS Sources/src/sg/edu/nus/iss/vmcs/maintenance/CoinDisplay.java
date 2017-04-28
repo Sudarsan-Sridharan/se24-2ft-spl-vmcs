@@ -10,6 +10,7 @@ package sg.edu.nus.iss.vmcs.maintenance;
 import java.awt.*;
 
 import sg.edu.nus.iss.vmcs.store.*;
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.util.VMCSException;
 
 /**
@@ -22,13 +23,18 @@ import sg.edu.nus.iss.vmcs.util.VMCSException;
  * @author Olivo Miotto, Pang Ping Li
  */
 public class CoinDisplay extends Panel {
-	public final static String TITLE = "Quantity of Coins Available";
+	//changed for language variant
+	//public final static String TITLE = "Quantity of Coins Available";
+	public String TITLE;
 
 	private StoreController storeCtrl;
 	private MaintenanceController mCtrl;
 	private ButtonItemDisplay bi;
 	private int len;
 	private int curIdx;
+
+	//added for language variant
+	private LanguagePropertyLoader languagePropertyLoader;
 
 	/**
 	 * This constructor creates an instance of CoinDisplay object.
@@ -37,6 +43,10 @@ public class CoinDisplay extends Panel {
 	public CoinDisplay(MaintenanceController mctrl) {
 		mCtrl = mctrl;
 		storeCtrl = mCtrl.getMainController().getStoreController();
+
+		//added for language variant
+		this.languagePropertyLoader=mCtrl.getMainController().getLanguagePropertyLoader();
+		TITLE=languagePropertyLoader.getValue("CASH_VIEW_TITLE");
 
 		len = storeCtrl.getStoreSize(Store.CASH);
 		StoreItem[] items = storeCtrl.getStoreItems(Store.CASH);

@@ -19,6 +19,7 @@ import sg.edu.nus.iss.vmcs.store.Store;
 import sg.edu.nus.iss.vmcs.store.StoreController;
 import sg.edu.nus.iss.vmcs.store.StoreItem;
 import sg.edu.nus.iss.vmcs.store.StoreObject;
+import sg.edu.nus.iss.vmcs.system.LanguagePropertyLoader;
 import sg.edu.nus.iss.vmcs.system.MainController;
 
 /**
@@ -31,6 +32,9 @@ public class CoinInputBox extends Panel{
 	private CoinButton[] btnCoinButton;
 	
 	private TransactionController txCtrl;
+
+	//added for language property
+	private LanguagePropertyLoader languagePropertyLoader;
 	
 	/**
 	 * This constructor creates an instance of the object.
@@ -61,7 +65,12 @@ public class CoinInputBox extends Panel{
 				    GridBagConstraints.EAST,GridBagConstraints.HORIZONTAL,
 				    new Insets(0,0,0,0),10,8));
 		}
-		btnCoinButton[cashStoreSize]=new CoinButton("Invalid",-1,CashStore.INVALID_COIN_WEIGHT);
+
+		//changed for language variant
+		//btnCoinButton[cashStoreSize]=new CoinButton("Invalid",-1,CashStore.INVALID_COIN_WEIGHT);
+		languagePropertyLoader=txCtrl.getMainController().getLanguagePropertyLoader();
+		btnCoinButton[cashStoreSize]=new CoinButton(languagePropertyLoader.getValue("Invalid"),-1,CashStore.INVALID_COIN_WEIGHT);
+
 		btnCoinButton[cashStoreSize].addActionListener(coinInputListener);
 		add(btnCoinButton[cashStoreSize],new GridBagConstraints(cashStoreSize,1,1,1,1.0,0.0,
 			    GridBagConstraints.EAST,GridBagConstraints.HORIZONTAL,

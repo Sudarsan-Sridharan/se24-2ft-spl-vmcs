@@ -29,6 +29,9 @@ public class Environment {
 	/**This constant attribute denotes the password string*/
 	public final static String PASSWORD = "password";
 
+	//added for language property
+	public final static String Language_PROP_FILE="languageFile";
+
 	private static Properties prop;
 
 	/**
@@ -86,4 +89,11 @@ public class Environment {
 	public static String getPassword() {
 		return prop.getProperty(PASSWORD);
 	}
+
+	//add for language property
+	public static String getLanguagePropFile() {
+		return prop.getProperty(Language_PROP_FILE);
+	}
+
+
 }//End of class Environment

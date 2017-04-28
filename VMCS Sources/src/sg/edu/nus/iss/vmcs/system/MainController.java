@@ -33,6 +33,9 @@ public class MainController {
 	//TODO: For Advanced Function
 	private MembershipController  membershipController;
 
+	//added for language variant
+	private LanguagePropertyLoader languagePropertyLoader;
+
 	/**
 	 * This constructor creates an instance of MainController object.
 	 * @param propertyFile the property file name.
@@ -68,11 +71,23 @@ public class MainController {
 				new CashPropertyLoader(Environment.getCashPropFile());
 			DrinkPropertyLoader drinksLoader =
 				new DrinkPropertyLoader(Environment.getDrinkPropFile());
+
 			MembershipLoader membershipLoader =
 					new MembershipLoader(Environment.getMemberShipFile());
+
+			membershipLoader.initialize();
+
+			//added for language variant
+			languagePropertyLoader=
+					new LanguagePropertyLoader(Environment.getLanguagePropFile());
+
 			cashLoader.initialize();
 			drinksLoader.initialize();
-			membershipLoader.initialize();
+
+			//added for language variant
+			languagePropertyLoader.initialize();
+			//System.out.println(languageLoader.getValue("L_SIMUL_BEGIN"));
+
 			storeCtrl = new StoreController(cashLoader, drinksLoader);
 			storeCtrl.initialize();
 			simulatorCtrl = new SimulationController(this);
@@ -99,6 +114,12 @@ public class MainController {
 	public MembershipController getMembershipController() {
 		return membershipController;
 	}
+
+	//added for language variant
+	public LanguagePropertyLoader getLanguagePropertyLoader(){
+		return this.languagePropertyLoader;
+	}
+
 
 	/**
 	 * This method returns the SimulationController.
