@@ -18,6 +18,13 @@
       </cm:property>
     </cm:properties>
   </cm:head>
+  <cm:restrictions>
+    <cm:restset cm:id="ivppFrshuZPVzEitH">
+      <cm:restriction cm:id="iKKqZNIYNmBQJcXmU" cm:name="Membership">
+        <cm:script cm:id="i60DNPmHdYHLi7nie" cm:language="ps:pvscl" cm:type="ps:boolean">hasFeature(&apos;MembershipSS&apos;)</cm:script>
+      </cm:restriction>
+    </cm:restset>
+  </cm:restrictions>
   <cm:elements cm:rootid="ihO7eBzPJemC0ghg0joZiV4C94id">
     <cm:element cm:id="ihO7eBzPJemC0ghg0joZiV4C94id" cm:name="VMCS_Source" cm:type="ps:family" cm:class="ps:family" cm:default="on">
       <cm:relations cm:id="ihO7eBzPJemC0ghg0joZiV4C94iddependecies" cm:class="ps:dependencies">
@@ -1802,7 +1809,7 @@
         <cm:mimedesc cm:id="ioDjW-vDf90bWMqSY" cm:mimetype="text/plain" cm:encoding="utf-8">membership</cm:mimedesc>
       </cm:vname>
     </cm:element>
-    <cm:element cm:id="idUdsnd1NvYQrGvV2sADCT99uFAa" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+    <cm:element cm:id="idUdsnd1NvYQrGvV2sADCT99uFAa" cm:restriction="ivppFrshuZPVzEitH" cm:type="ps:class" cm:class="ps:part" cm:default="on">
       <cm:relations cm:id="idUdsnd1NvYQrGvV2sADCT99uFAadependecies" cm:class="ps:dependencies">
       </cm:relations>
       <cm:relations cm:id="iJ4tKeXtKBwu1VlOQO6__cqNPreYSOA_F2DrKhXs0" cm:class="ps:parents">
@@ -1826,7 +1833,7 @@
           <cm:constant cm:id="igc0Eh0I_KxmHp-oR" cm:type="ps:string">e0015370</cm:constant>
         </cm:property>
         <cm:property cm:id="iKmMBoEwDXbya9bQT" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iHTxdfVwCK-ASefqj" cm:type="ps:datetime">2017-04-28T06:02:19.967Z</cm:constant>
+          <cm:constant cm:id="iHTxdfVwCK-ASefqj" cm:type="ps:datetime">2017-04-28T06:16:27.654Z</cm:constant>
         </cm:property>
       </cm:properties>
       <cm:vname>
