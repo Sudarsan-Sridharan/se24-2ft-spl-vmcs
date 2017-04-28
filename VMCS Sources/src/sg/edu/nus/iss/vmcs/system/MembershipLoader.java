@@ -51,7 +51,7 @@ public class MembershipLoader extends FilePropertyLoader {
         setValue(name_2, member.getPwd());
 
         String name_3 = new String(BALANCE_LABEL + idx);
-        setValue(name_3, Float.toString(member.getBalance()));
+        setValue(name_3, String.format("%.2f",member.getBalance()));
     }
 
 	@Override
