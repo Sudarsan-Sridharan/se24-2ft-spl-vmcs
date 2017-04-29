@@ -1,0 +1,23 @@
+*** Transformation "Default" started at Apr 29 15:15:06
+
+Transformation Module States:
+-----------------------------
+
+Initialize Module "Action List Generator" [standard transformation]
+	Status : OK
+Initialize Module "Makefile Generator" [makefile]
+	Status : OK
+Run Module "Action List Generator" [standard transformation]
+	Status : OK
+Run Module "Makefile Generator" [makefile]
+	Status : OK
+Cleanup Module "Action List Generator" [standard transformation]
+	Status : OK
+Cleanup Module "Makefile Generator" [makefile]
+	Status : OK
+
+*** Transformation "Default" finished at Apr 29 15:15:07
+
+Transformation Module Logs:
+---------------------------
+

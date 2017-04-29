@@ -6,7 +6,7 @@
 </cm:relations>
 <cm:properties><cm:property cm:id="iOx9VfE8MJkDZw0N6" cm:type="ps:path" cm:name="module_base"><cm:constant cm:id="i5qrwdEDqIBEDWHCO" cm:type="ps:path">$(WORKSPACE)</cm:constant>
 </cm:property>
-<cm:property cm:id="iWPm89HcaB503_6ma" cm:type="ps:path" cm:name="input_url"><cm:constant cm:id="ial8G02xqaDbAzE0_" cm:type="ps:path">$(PROJECT)/input</cm:constant>
+<cm:property cm:id="iWPm89HcaB503_6ma" cm:type="ps:path" cm:name="input_url"><cm:constant cm:id="iFOGAIcjoQ1-BenPz" cm:type="ps:path">C:/Users/e0015370/Downloads/VMCS/VMCS Sources</cm:constant>
 </cm:property>
 <cm:property cm:id="iI9zAamiUmfT-Oezx" cm:type="ps:path" cm:name="output_url"><cm:constant cm:id="iU_UN7ofnUkJumEFM" cm:type="ps:path">$(PROJECT)/output/$(VARIANT)</cm:constant>
 </cm:property>
