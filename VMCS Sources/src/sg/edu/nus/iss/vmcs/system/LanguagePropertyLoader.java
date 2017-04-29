@@ -37,7 +37,7 @@ public class LanguagePropertyLoader {
         prop = new Properties();
         //InputStream inputStream = this.getClass().getResourceAsStream("fileName");
         FileInputStream inputStream = new FileInputStream(fileName);
-        BufferedReader bf = new BufferedReader(new InputStreamReader(inputStream));
+        BufferedReader bf = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
         prop.load(bf);
         inputStream.close();
         //System.out.println(properties.getProperty("a"));
