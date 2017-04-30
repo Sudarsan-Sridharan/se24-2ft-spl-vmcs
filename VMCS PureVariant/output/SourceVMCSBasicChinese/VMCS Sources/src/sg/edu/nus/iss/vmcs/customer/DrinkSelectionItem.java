@@ -74,14 +74,6 @@ public class DrinkSelectionItem extends Panel{
 	 * This method initialize the GUI.
 	 */
 	private void init(){
-	    /** TODO: For Advanced Function*/
-        try {
-            Image img = ImageIO.read(new File("resources/" + name + ".png"));
-            btn.setIcon(new ImageIcon(img));
-        } catch (Exception ex) {
-            System.out.println(ex);
-        }
-
         btn.setOpaque(true);
 		btn.setText(name);
 		lbl.setText(""+price+" C");
