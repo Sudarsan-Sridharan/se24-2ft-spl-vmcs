@@ -60,6 +60,38 @@ public class DrinkSelectionBox extends Panel{
 				    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
 				    new Insets(5,0,0,0),10,0));  
 		}
+
+		/** TODO: Advanced Function **/
+        JTextField drinkSelectText = new JTextField(10);
+        add(new Label("Select Drink:"),new GridBagConstraints(0, drinkSelectionItems.length, 1, 1, 1.0, 0.0,
+                GridBagConstraints.EAST,GridBagConstraints.HORIZONTAL,
+                new Insets(5,0,0,0),10,0));
+        add(drinkSelectText,new GridBagConstraints(1, drinkSelectionItems.length, 1, 1, 5.0, 0.0,
+                GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+                new Insets(5,0,0,0),10,0));
+        drinkSelectText.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedDrink = drinkSelectText.getText();
+                drinkSelectText.setText("");
+                DrinkSelectionItem drinkSelectionItem = null;
+                for (int i = 0; i < drinkSelectionItems.length; i++) {
+                    DrinkSelectionItem item = drinkSelectionItems[i];
+                    if (selectedDrink.equals(item.getName())) {
+                        if (!item.getItemState()) {
+                            drinkSelectionItem = item;
+                            break;
+                        }
+                    }
+                }
+                if (drinkSelectionItem != null) {
+                    txCtrl.startTransaction(drinkSelectionItem.getDrinkIdentifier());
+                    drinkSelectionItem.setButtonBackground(Color.yellow);
+                }
+                System.out.println(">>> Selected Drink: " + selectedDrink);
+            }
+        });
+
 	}
 	
 	/**

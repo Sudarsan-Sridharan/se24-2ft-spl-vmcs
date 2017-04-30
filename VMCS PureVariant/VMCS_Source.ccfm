@@ -116,12 +116,12 @@
     </cm:restset>
     <cm:restset cm:id="i185dxctC_yUZYGUd">
       <cm:restriction cm:id="igA_ntYnBQiCxg5Hg">
-        <cm:script cm:id="iJ5cls45OG-U3Ghkn" cm:language="ps:prolog" cm:type="ps:boolean">hasFeature(&apos;Keypad&apos;)</cm:script>
+        <cm:script cm:id="iJ5cls45OG-U3Ghkn" cm:language="ps:prolog" cm:type="ps:boolean">hasFeature(&apos;KeypadSS&apos;)</cm:script>
       </cm:restriction>
     </cm:restset>
     <cm:restset cm:id="i4TGtIRb7eURU5ccS">
       <cm:restriction cm:id="iihcM0xGr0GJDqD1n">
-        <cm:script cm:id="i-ZKopUlarSogQDhm" cm:language="ps:prolog" cm:type="ps:boolean">not(hasFeature(&apos;Keypad&apos;))</cm:script>
+        <cm:script cm:id="i-ZKopUlarSogQDhm" cm:language="ps:prolog" cm:type="ps:boolean">not(hasFeature(&apos;KeypadSS&apos;))</cm:script>
       </cm:restriction>
     </cm:restset>
   </cm:restrictions>
