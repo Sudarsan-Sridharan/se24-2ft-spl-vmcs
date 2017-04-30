@@ -1,0 +1,49 @@
+*** Transformation "Default" started at Apr 29 20:49:26
+
+Transformation Module States:
+-----------------------------
+
+Initialize Module "Enterprise Architect Module" [Enterprise Architect Module]
+	Status : OK
+Run Module "Enterprise Architect Module" [Enterprise Architect Module]
+	Status : OK
+Cleanup Module "Enterprise Architect Module" [Enterprise Architect Module]
+	Status : OK
+
+*** Transformation "Default" finished at Apr 29 20:51:21
+
+Transformation Module Logs:
+---------------------------
+
+*** Module "Enterprise Architect Module" [Enterprise Architect Module] ***
+
+Apr 29, 2017 8:49:27 PM starting pure::variants transformation log (Version 4.0.5.685)
+Input=
+\\ISSBOR2604\Users\e0015370\Downloads\VMCS\VMCS PureVariant\input\VMCS.eap
+Output= \\ISSBOR2604\Users\e0015370\Downloads\VMCS\VMCS PureVariant\output\VMCSBasicChinese\VMCS.eap
+VRM= C:\Users\e0013344\AppData\Local\Temp\TransformTmp3860\VMCSBasicChinese.vrm
+Deleting constraint "MemberAccount"
+Deleting element "Payment by Membership Account"
+Deleting constraint "Membership"
+Deleting constraint "Membership"
+Deleting method constraint
+Deleting method
+Deleting package "Membership Functions"
+Deleting element "MembershipLoader"
+Deleting constraint "Membership"
+Deleting method constraint
+Deleting method
+Deleting method constraint
+Deleting method
+Deleting method constraint
+Deleting method
+Deleting method constraint
+Deleting method
+Deleting element constraint
+Deleting element "MembershipLoader"
+Deleting package "Design of Membership"
+finished
+Removing p::v model information from EA project
+Transformation finished
+
+

@@ -1,0 +1,35 @@
+#SimulatorControlPanel
+lblTitle＝模拟器面板
+L_SIMUL_BEGIN    = 开始模拟
+L_SIMUL_END      = 结束模拟
+L_ACT_MAINTAINER = 激活维护面板
+L_ACT_MACHINERY  = 激活机器面板
+L_ACT_CUSTOMER   = 激活用户面板
+#CustomerPanel
+TitleforCustomerPanel=用户面板
+VMCSSoftDrinksDispenser=VMCS小吃饮料分发器
+lblEnterCoins=硬币由此插入
+wndInvalidCoin=无效硬币
+lbdTotalMoneyInserted=插入的面值总额：
+wndNoChangeAvailable=没有零钱可用
+btnTerminate=结束并退还钱
+lbdCollectCoins=退还数额：
+lbdCollectCan=请由此拿回您的饮品：
+#MachinerySimulatorPanel
+TitleforMachineryPanel=机器面板
+DoorLocked=门已关好
+#MaintenancePanel
+TitleforMaintenancePanel=维护面板
+Password=密码
+ValidPassword=有效密码
+InvalidPassword=无效密码
+ShowTotalCashHeld=显示机器里钱的总数额
+PresstoCollectAllCash=按下以收集所有硬币
+CollectCash=收集硬币：
+PressHerewhenFinished=完成之后按此
+#StoreViewer
+CASH_VIEW_TITLE = 可用的硬币数量
+DRINK_VIEW_TITLE= 可用的饮料数量
+#DrinkSelectionItem
+NotinStock=没有库存
+Invalid=无效

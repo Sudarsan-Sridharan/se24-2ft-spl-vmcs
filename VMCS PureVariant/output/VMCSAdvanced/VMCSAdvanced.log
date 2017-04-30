@@ -1,4 +1,4 @@
-*** Transformation "Default" started at Apr 29 14:25:46
+*** Transformation "Default" started at Apr 29 21:01:06
 
 Transformation Module States:
 -----------------------------
@@ -10,20 +10,31 @@ Run Module "Enterprise Architect Module" [Enterprise Architect Module]
 Cleanup Module "Enterprise Architect Module" [Enterprise Architect Module]
 	Status : OK
 
-*** Transformation "Default" finished at Apr 29 14:27:41
+*** Transformation "Default" finished at Apr 29 21:03:05
 
 Transformation Module Logs:
 ---------------------------
 
 *** Module "Enterprise Architect Module" [Enterprise Architect Module] ***
 
-Apr 29, 2017 2:25:47 PM starting pure::variants transformation log (Version 4.0.5.685)
+Apr 29, 2017 9:01:07 PM starting pure::variants transformation log (Version 4.0.5.685)
 Input=
 \\ISSBOR2604\Users\e0015370\Downloads\VMCS\VMCS PureVariant\input\VMCS.eap
 Output= \\ISSBOR2604\Users\e0015370\Downloads\VMCS\VMCS PureVariant\output\VMCSAdvanced\VMCS.eap
-VRM= C:\Users\e0013344\AppData\Local\Temp\TransformTmp8059\VMCSAdvanced.vrm
+VRM= C:\Users\e0013344\AppData\Local\Temp\TransformTmp2769\VMCSAdvanced.vrm
 Deleting constraint "MemberAccount"
-Deleting constraint "MemberAccount"
+Deleting constraint "Membership"
+Deleting constraint "Membership"
+Deleting method constraint
+Deleting constraint "Membership"
+Deleting method constraint
+Deleting method
+Deleting method constraint
+Deleting method
+Deleting method constraint
+Deleting method constraint
+Deleting method
+Deleting element constraint
 finished
 Removing p::v model information from EA project
 Transformation finished
