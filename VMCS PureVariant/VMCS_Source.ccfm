@@ -170,7 +170,7 @@
         </cm:property>
       </cm:properties>
       <cm:vname>
-        <cm:mimedesc cm:id="icCqkEX8yB7jUZe_a" cm:mimetype="text/plain" cm:encoding="utf-8">C:/Users/e0015370/Downloads/VMCS/VMCS Sources</cm:mimedesc>
+        <cm:mimedesc cm:id="icCqkEX8yB7jUZe_a" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS Sources</cm:mimedesc>
       </cm:vname>
     </cm:element>
     <cm:element cm:id="ieJc-8d0g0xHmGgaQC_7TkbSc9vm" cm:type="ps:component" cm:class="ps:component" cm:default="on">
@@ -215,7 +215,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iLV17hXevV6Zy-OHmJDu3xZqYlPj" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iA19WSp6A8uDJdnQFHPX2CD2O_Gh" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources</cm:constant>
+          <cm:constant cm:id="iA19WSp6A8uDJdnQFHPX2CD2O_Gh" cm:type="ps:directory">VMCS Sources</cm:constant>
         </cm:property>
         <cm:property cm:id="iQAAl9xAxYXeEoB0P9tLZp8I_1pp" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="i_SZdBCU6KNc3r1XtnKc-65OXcXn" cm:type="ps:directory">VMCS Sources</cm:constant>
@@ -255,7 +255,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="invSehOvAM8dXm-MmbwwuyL6z37g" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ipwqyj0pkreO14ddoRcmmp_4Up9e" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/resources</cm:constant>
+          <cm:constant cm:id="ipwqyj0pkreO14ddoRcmmp_4Up9e" cm:type="ps:directory">VMCS Sources/resources</cm:constant>
         </cm:property>
         <cm:property cm:id="i9Keaq-jGOXcAasY9sCy0VZbFAmc" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iYFzpT0flX_NVAtVTFDVQB0qBtFn" cm:type="ps:directory">VMCS Sources/resources</cm:constant>
@@ -496,7 +496,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="i91jOkH-VK4wZe5xz4_X_Qr_NRGg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ikAleptzJ9ktSdG71p8QXOy5ySne" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src</cm:constant>
+          <cm:constant cm:id="ikAleptzJ9ktSdG71p8QXOy5ySne" cm:type="ps:directory">VMCS Sources/src</cm:constant>
         </cm:property>
         <cm:property cm:id="i22_Nt4mpz-m5HXlR5LEYX5_4qIa" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="i7AJTX1nVJOclaRmegGJtUxZ239p" cm:type="ps:directory">VMCS Sources/src</cm:constant>
@@ -521,7 +521,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iYcmIEGu18G0z4L0AVftkjLUGLKg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ipP_idEndX79uEfJdbYYIua6XXZf" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg</cm:constant>
+          <cm:constant cm:id="ipP_idEndX79uEfJdbYYIua6XXZf" cm:type="ps:directory">VMCS Sources/src/sg</cm:constant>
         </cm:property>
         <cm:property cm:id="iLDrRWg60VFwBiyUNQ_G1wFD6m4c" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="io77GCG4saffaazstQb2nMSs9KHh" cm:type="ps:directory">VMCS Sources/src/sg</cm:constant>
@@ -546,7 +546,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iQ9cIzTvZu3S2WJq-VE-5Mts-Ikn" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i4bLUztadNTCsLlKMMbNxLeuS2ep" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu</cm:constant>
+          <cm:constant cm:id="i4bLUztadNTCsLlKMMbNxLeuS2ep" cm:type="ps:directory">VMCS Sources/src/sg/edu</cm:constant>
         </cm:property>
         <cm:property cm:id="irXKOoRLzD08BOn2wVEsfy1iG8Bg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iIT8QlQz7PjQMYwMoPb97qDfHkvj" cm:type="ps:directory">VMCS Sources/src/sg/edu</cm:constant>
@@ -571,7 +571,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="i9AqsJKXwF9kb63PXLx2Ro4GQGrk" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iE8jE6rhBjzvtfnNPGFbF7FWUonj" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus</cm:constant>
+          <cm:constant cm:id="iE8jE6rhBjzvtfnNPGFbF7FWUonj" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus</cm:constant>
         </cm:property>
         <cm:property cm:id="iQmUUf5HqPHJdmpHzqd4eYlgxAoa" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="ifbImST4sZJE5GIQ0nkRmv_HbkYi" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus</cm:constant>
@@ -596,7 +596,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iPVpSx49DixRflfdWvGDT6ROSlLo" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i-YSdDkgsZ7Mkc5xjoUaQWy3iXZi" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss</cm:constant>
+          <cm:constant cm:id="i-YSdDkgsZ7Mkc5xjoUaQWy3iXZi" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss</cm:constant>
         </cm:property>
         <cm:property cm:id="iwPwxAEHCM5KM2u-zIhwJzG00ASp" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="i-uXf2mQktwWC1FygrzMyCQGSz8f" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss</cm:constant>
@@ -629,7 +629,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iADcKwEPlDz8i7v0dV_CweBum3Xj" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iWll9BvVTC10irPi8uQu-oiAVNob" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs</cm:constant>
+          <cm:constant cm:id="iWll9BvVTC10irPi8uQu-oiAVNob" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs</cm:constant>
         </cm:property>
         <cm:property cm:id="iHxnCZTPoitbOkLQYiqukF6KGTbj" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="igzoHOXlzUKr1R4QsZ3gKLdvQqJj" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs</cm:constant>
@@ -680,7 +680,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iZbA8JkDHo1Uv5jc1xBBKZTiq_-e" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ioFlI5nplHIiqSTiq5dkarOqYJlh" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</cm:constant>
+          <cm:constant cm:id="ioFlI5nplHIiqSTiq5dkarOqYJlh" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</cm:constant>
         </cm:property>
         <cm:property cm:id="i_d_Xl-Z77GU2JwNnyfplMq-qtXe" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="ibKVa6h_D23r0aehmpx_BOGGTSnd" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</cm:constant>
@@ -1248,7 +1248,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="ioPHCInHXMnZsdhGmzjIqe9aU4Cm" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i5nUf0CJnl24cSvTH_3ndAHHcUum" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</cm:constant>
+          <cm:constant cm:id="i5nUf0CJnl24cSvTH_3ndAHHcUum" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</cm:constant>
         </cm:property>
         <cm:property cm:id="iAkUWADkKExyowPS-YS56_Y32l9l" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iyrlfBYPghLJC6IcmTzxQYrR-9ng" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</cm:constant>
@@ -1522,7 +1522,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iyk_-HyC3cGKzxoqRsjdtRHteaGc" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="im-T15k0N-yRDdnGqSHjYT6KyGhf" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</cm:constant>
+          <cm:constant cm:id="im-T15k0N-yRDdnGqSHjYT6KyGhf" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</cm:constant>
         </cm:property>
         <cm:property cm:id="ipnZAm-vu5js2qKiXJE_nhE5j6_f" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iqzJYvPR2MGOQB5_jSr24OT7PZ7b" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</cm:constant>
@@ -2117,7 +2117,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iDjv5Ndi_SWTbJ-yQobKyWSeJHGg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iyFIq6X_2iHVcSuuEHAWSWwMvrGh" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/membership</cm:constant>
+          <cm:constant cm:id="iyFIq6X_2iHVcSuuEHAWSWwMvrGh" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/membership</cm:constant>
         </cm:property>
         <cm:property cm:id="iGKAw02ZVWdQXzjVHUj24kStSA_l" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="idNEqHTl2ltVO0lOia4hxT5bB5-l" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/membership</cm:constant>
@@ -2381,7 +2381,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="ikPuaaEDUAl1t9OOKaqvEcjGJAgg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i-CoftpAkDvAC74OS9bNgwSzVSHh" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</cm:constant>
+          <cm:constant cm:id="i-CoftpAkDvAC74OS9bNgwSzVSHh" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/store</cm:constant>
         </cm:property>
         <cm:property cm:id="icq9RVY19GB9U5_v3-QCv2kc9U2n" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iwfr3GH0OlPCmGKMB9sF-AC_Odba" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/store</cm:constant>
@@ -2841,7 +2841,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="io60TeZfgFuCFBVBXE4ijJ0evVKe" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iVMMUEAmBG73NmSAonc4LK3B1ymc" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</cm:constant>
+          <cm:constant cm:id="iVMMUEAmBG73NmSAonc4LK3B1ymc" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/system</cm:constant>
         </cm:property>
         <cm:property cm:id="ie6w4hpkfDy82wTUiApeQIWDK3zg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iMiRHr5eTJJPB-Gd2MaAn154h3Xd" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/system</cm:constant>
@@ -3405,7 +3405,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="isA5_za8jU36FSyRsz3FPEvrQ-cd" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iRKt1alO2tzPTTUu6vPuQmjPO_If" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/util</cm:constant>
+          <cm:constant cm:id="iRKt1alO2tzPTTUu6vPuQmjPO_If" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/util</cm:constant>
         </cm:property>
         <cm:property cm:id="iy9G_RGawkvLij90uGIJjqQnQ4Qg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="i0A0uOuNov1183IoRa-RxIY2LPWl" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/util</cm:constant>
@@ -3664,7 +3664,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iAphUbDRKV5q80s6xxMb7PTaoFZh" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i25nGAnnipn491YPBV2APNTS5q2n" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/tests</cm:constant>
+          <cm:constant cm:id="i25nGAnnipn491YPBV2APNTS5q2n" cm:type="ps:directory">VMCS Sources/tests</cm:constant>
         </cm:property>
         <cm:property cm:id="iez1Ppy7YFu7g7uMhog0RD-SSeZn" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="ikKLPffhcltpoHONJFqLGT2pC2Op" cm:type="ps:directory">VMCS Sources/tests</cm:constant>
@@ -3689,7 +3689,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="ii4sEO356cScb6ogXeNZpeInyFqm" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iVQ7bU-RmEgDiA4jCoNgmVFTsvzg" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/tests/sg</cm:constant>
+          <cm:constant cm:id="iVQ7bU-RmEgDiA4jCoNgmVFTsvzg" cm:type="ps:directory">VMCS Sources/tests/sg</cm:constant>
         </cm:property>
         <cm:property cm:id="ixibVMhcnVjUYMRr5uNwVpVZolIg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iPl5JE9z2chWq19wtWWkQ0qQzuZg" cm:type="ps:directory">VMCS Sources/tests/sg</cm:constant>
@@ -3714,7 +3714,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="i7ZPOCmt4pSc73kGHAvM-2bfRrjo" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ik80VhuoUf44IPbLxD5jv1YuxPef" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/tests/sg/edu</cm:constant>
+          <cm:constant cm:id="ik80VhuoUf44IPbLxD5jv1YuxPef" cm:type="ps:directory">VMCS Sources/tests/sg/edu</cm:constant>
         </cm:property>
         <cm:property cm:id="ifd9s767urY6aiD_6KdrNhD2yNVn" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iKj4T2O0L-0564HTXR3ZSEY-gyJl" cm:type="ps:directory">VMCS Sources/tests/sg/edu</cm:constant>
@@ -3739,7 +3739,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iTL8CwW_bPNSbt6uQ8_ZahwcdVXg" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iz4cpMo33heCCZI9u_QiIuEi6-Qd" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/tests/sg/edu/nus</cm:constant>
+          <cm:constant cm:id="iz4cpMo33heCCZI9u_QiIuEi6-Qd" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus</cm:constant>
         </cm:property>
         <cm:property cm:id="iQvY8aNeMUF9US2b3k2xOPS1OiSd" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="ieC4nWMFCcOU9Qx_Ia0_eqOahXxb" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus</cm:constant>
@@ -3764,7 +3764,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="i3jPQNy7aBOOOQxLSltZDUGLFINc" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ir5tY4GkW5ke3uKb4koZfFKk7Wan" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/tests/sg/edu/nus/iss</cm:constant>
+          <cm:constant cm:id="ir5tY4GkW5ke3uKb4koZfFKk7Wan" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus/iss</cm:constant>
         </cm:property>
         <cm:property cm:id="iFyU7dKMgItWKAuCTBmCflYXtzel" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="icl_ojwzS88TbitFp1lyVDnTaiah" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus/iss</cm:constant>
@@ -3789,7 +3789,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="i6aG9-ZmtrzKGoWg8jsTNg8p4LEe" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ibmuY4oh9sASxljqxdp79B-M0FPa" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/tests/sg/edu/nus/iss/vmcs</cm:constant>
+          <cm:constant cm:id="ibmuY4oh9sASxljqxdp79B-M0FPa" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus/iss/vmcs</cm:constant>
         </cm:property>
         <cm:property cm:id="iJwVdgSLm7-sdRp10bbDrzAMnGoi" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iBS4Wv0hLoHJxfJyODNXidr3ZRUm" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus/iss/vmcs</cm:constant>
@@ -3824,7 +3824,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iZ7o07hKUKUtFcOGccGrcdkBus1e" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i94_GU03-4yG0eYA8IZE34W235Jk" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</cm:constant>
+          <cm:constant cm:id="i94_GU03-4yG0eYA8IZE34W235Jk" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</cm:constant>
         </cm:property>
         <cm:property cm:id="iWl1oc7MeJ-8Th_gUNGJ9GpGRyEo" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iS-ZovhaXyVczXIq-0lQyrMIPD4c" cm:type="ps:directory">VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</cm:constant>
@@ -4607,7 +4607,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iS9T9803BLxlrtC7V9OKBEsxXzPj" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iQ285S2Ve1ZkZArdQs5futVi9tpi" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/ChineseVersion</cm:constant>
+          <cm:constant cm:id="iQ285S2Ve1ZkZArdQs5futVi9tpi" cm:type="ps:directory">VMCS Sources/ChineseVersion</cm:constant>
         </cm:property>
         <cm:property cm:id="iP3HqRutdhXKrwyaCAjEEN2VEd4c" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iRhrmG9grzo_XGRaxmH0DNQ8hKPa" cm:type="ps:directory">VMCS Sources/ChineseVersion</cm:constant>
@@ -6160,7 +6160,7 @@
       </cm:relations>
       <cm:properties>
         <cm:property cm:id="iyi0vZs7HgxLvdOqnDhvZ-4zGgHf" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iC7hY4HVGygyU0fRTMOmyEDoBUue" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/jars</cm:constant>
+          <cm:constant cm:id="iC7hY4HVGygyU0fRTMOmyEDoBUue" cm:type="ps:directory">VMCS Sources/jars</cm:constant>
         </cm:property>
         <cm:property cm:id="iCab555DTGNXR4XufQgH1tuq6y_h" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
           <cm:constant cm:id="iJoKNxw8cQdbUlQAonF1BcflIgsn" cm:type="ps:directory">VMCS Sources/jars</cm:constant>
@@ -6292,7 +6292,7 @@
           <cm:constant cm:id="iDIpG3z2JI-_GQGog" cm:type="ps:path">NoMembershipFeature_MainController.template</cm:constant>
         </cm:property>
         <cm:property cm:id="iRlYDX_0z1WjtPc-b" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iVVWXJWEk-jD7n3RV" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
+          <cm:constant cm:id="iVVWXJWEk-jD7n3RV" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
         </cm:property>
         <cm:property cm:id="iW4viB6xDQTx536oU" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iWrX9fT9wyS-nK6kd" cm:type="ps:string">e0015370</cm:constant>
@@ -6325,7 +6325,7 @@
           <cm:constant cm:id="iz3svKRT-xIwT3kLm" cm:type="ps:path">NoMembershipFeature_CustomerPanel.template</cm:constant>
         </cm:property>
         <cm:property cm:id="isFzxxNs6Mj6JyTGH" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iQFERoxJ6opPm5vLe" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
+          <cm:constant cm:id="iQFERoxJ6opPm5vLe" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
         </cm:property>
         <cm:property cm:id="iOjrh5IvCDE42a9IF" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iRavKNFAbXOucWXF-" cm:type="ps:string">e0015370</cm:constant>
@@ -6358,7 +6358,7 @@
           <cm:constant cm:id="iQRn72fcYsqEBvYjX" cm:type="ps:path">NoImageButtonFeature_DrinkSelectionItem.template</cm:constant>
         </cm:property>
         <cm:property cm:id="inWs8iNLqd19DXrun" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ibKmzbcqyvfqHSewJ" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
+          <cm:constant cm:id="ibKmzbcqyvfqHSewJ" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
         </cm:property>
         <cm:property cm:id="i3mCaeFLBPhk_Jgo1" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="ifEB26IejwTgVqtpr" cm:type="ps:string">e0015370</cm:constant>
@@ -6391,7 +6391,7 @@
           <cm:constant cm:id="iBFEcZKigSHt-JlYN" cm:type="ps:path">NoKeypadSelectionFeature_DrinkSelectionBox.template</cm:constant>
         </cm:property>
         <cm:property cm:id="iPDRZRuNahK9Rj5yW" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iZDOsoMUmNXbJ-TmR" cm:type="ps:directory">C:/Users/e0015370/Downloads/VMCS/VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
+          <cm:constant cm:id="iZDOsoMUmNXbJ-TmR" cm:type="ps:directory">VMCS Sources/src/sg/edu/nus/iss/vmcs/feature</cm:constant>
         </cm:property>
         <cm:property cm:id="ihBhpkG7WNTR_Dr7l" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="irWeeI6OuViRPsG17" cm:type="ps:string">e0015370</cm:constant>
