@@ -1,0 +1,21 @@
+#
+#Thu Apr 27 13:55:21 SGT 2017
+Name6=豆奶
+Name5=可口可乐
+Name4=豆奶
+Name3=沙士
+Name2=芬达
+Name1=可口可乐
+NumOfItems=6
+Quantity6=0
+Quantity5=3
+Quantity4=1
+Quantity3=0
+Quantity2=0
+Quantity1=0
+Price6=90
+Price5=100
+Price4=90
+Price3=60
+Price2=65
+Price1=100

@@ -1,0 +1,39 @@
+#SimulatorControlPanel
+lblTitle＝Simulation Control Panel
+L_SIMUL_BEGIN    = Begin Simulation
+L_SIMUL_END      = End Simulation
+L_ACT_MAINTAINER = Activate Maintainer Panel
+L_ACT_MACHINERY  = Activate Machinery Panel
+L_ACT_CUSTOMER   = Activate Customer Panel
+#CustomerPanel
+TitleforCustomerPanel=Customer Panel
+VMCSSoftDrinksDispenser=VMCS Soft Drinks Dispenser
+lblEnterCoins=Enter Coins Here
+wndInvalidCoin=Invalid Coin
+lbdTotalMoneyInserted=Total Money Inserted:
+wndNoChangeAvailable=No Change Available
+btnTerminate=Terminate and Return Cash
+lbdCollectCoins=Collect Coins:
+lbdCollectCan=Collect Can Here:
+#MachinerySimulatorPanel
+TitleforMachineryPanel=Machinery Panel
+DoorLocked=Door Locked
+#MaintenancePanel
+TitleforMaintenancePanel=Maintenance Panel
+Password=Password
+ValidPassword=Valid Password
+InvalidPassword=Invalid Password
+ShowTotalCashHeld=Show Total Cash Held
+PresstoCollectAllCash=Press to Collect All Cash
+CollectCash=Collect Cash:
+PressHerewhenFinished=Press Here when Finished
+#StoreViewer
+CASH_VIEW_TITLE = Quantity of Coins Available
+DRINK_VIEW_TITLE= Quantity of Drinks Available
+#DrinkSelectionItem
+NotinStock=Not in Stock
+#CoinInputBox
+Invalid=Invalid
+
+
+

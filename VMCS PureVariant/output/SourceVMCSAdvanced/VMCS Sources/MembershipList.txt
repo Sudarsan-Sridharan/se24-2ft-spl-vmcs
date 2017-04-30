@@ -1,14 +1,14 @@
 #
-#Fri Apr 28 14:28:57 SGT 2017
-Balance3=5.75
+#Sun Apr 30 18:12:11 SGT 2017
+Balance3=5.10
 Balance2=5.6
 Balance1=5.5
 Name4=Tran
 Name3=Gao
 Password4=123
 Name2=Chen
-Password3=123
 Name1=Wang
+Password3=123
 Password2=123
 Password1=123
 NumOfItems=4
