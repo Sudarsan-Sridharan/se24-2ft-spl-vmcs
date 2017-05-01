@@ -1,4 +1,4 @@
-*** Transformation "Default" started at Apr 29 21:01:06
+*** Transformation "Default" started at May 01 17:30:34
 
 Transformation Module States:
 -----------------------------
@@ -10,18 +10,18 @@ Run Module "Enterprise Architect Module" [Enterprise Architect Module]
 Cleanup Module "Enterprise Architect Module" [Enterprise Architect Module]
 	Status : OK
 
-*** Transformation "Default" finished at Apr 29 21:03:05
+*** Transformation "Default" finished at May 01 17:33:06
 
 Transformation Module Logs:
 ---------------------------
 
 *** Module "Enterprise Architect Module" [Enterprise Architect Module] ***
 
-Apr 29, 2017 9:01:07 PM starting pure::variants transformation log (Version 4.0.5.685)
+May 1, 2017 5:30:35 PM starting pure::variants transformation log (Version 4.0.5.685)
 Input=
-\\ISSBOR2604\Users\e0015370\Downloads\VMCS\VMCS PureVariant\input\VMCS.eap
-Output= \\ISSBOR2604\Users\e0015370\Downloads\VMCS\VMCS PureVariant\output\VMCSAdvanced\VMCS.eap
-VRM= C:\Users\e0013344\AppData\Local\Temp\TransformTmp2769\VMCSAdvanced.vrm
+C:\Users\e0015370\Downloads\VMCS\VMCS PureVariant\input\VMCS.eap
+Output= C:\Users\e0015370\Downloads\VMCS\VMCS PureVariant\output\VMCSAdvanced\VMCS.eap
+VRM= C:\Users\e0015370\AppData\Local\Temp\TransformTmp6048\VMCSAdvanced.vrm
 Deleting constraint "MemberAccount"
 Deleting constraint "Membership"
 Deleting constraint "Membership"
