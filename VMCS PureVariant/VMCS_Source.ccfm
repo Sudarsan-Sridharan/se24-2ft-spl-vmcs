@@ -124,6 +124,31 @@
         <cm:script cm:id="i-ZKopUlarSogQDhm" cm:language="ps:prolog" cm:type="ps:boolean">not(hasFeature(&apos;KeypadSS&apos;))</cm:script>
       </cm:restriction>
     </cm:restset>
+    <cm:restset cm:id="i_vjQOzl7-ebfYtAV">
+      <cm:restriction cm:id="irgRqNsgs5dDO9I2l">
+        <cm:script cm:id="iTTeBwSOUxpNtaGsz" cm:language="ps:prolog" cm:type="ps:boolean">hasFeature(&apos;EnglishSS&apos;)</cm:script>
+      </cm:restriction>
+    </cm:restset>
+    <cm:restset cm:id="iGTF9EnN9R8tU-27d">
+      <cm:restriction cm:id="iwd-xvmN8kq-qEYCd">
+        <cm:script cm:id="iQ-zA0JfzaKQjqSyZ" cm:language="ps:prolog" cm:type="ps:boolean">hasFeature(&apos;ChineseSS&apos;)</cm:script>
+      </cm:restriction>
+    </cm:restset>
+    <cm:restset cm:id="iM9KS3rAAnr4iIpiZ">
+      <cm:restriction cm:id="i3161GQcnNPK-kk2z">
+        <cm:script cm:id="iuJlwJybDNmQhF4a1" cm:language="ps:prolog" cm:type="ps:boolean">hasFeature(&apos;ImageFormatSS&apos;)</cm:script>
+      </cm:restriction>
+    </cm:restset>
+    <cm:restset cm:id="iwf3Pv61oHEH7hgVA">
+      <cm:restriction cm:id="iDAnQfCApa6zMiVgy">
+        <cm:script cm:id="iH-qg2OaGvjWTrCPF" cm:language="ps:prolog" cm:type="ps:boolean">hasFeature(&apos;MemberAccountSS&apos;)</cm:script>
+      </cm:restriction>
+    </cm:restset>
+    <cm:restset cm:id="in7NUweKxAfYUj-gF">
+      <cm:restriction cm:id="itW0tIJwk1eyeC-ph">
+        <cm:script cm:id="iy2lcwS_ZMTOV6TpE" cm:language="ps:prolog" cm:type="ps:boolean">hasFeature(&apos;KeypadSS&apos;)</cm:script>
+      </cm:restriction>
+    </cm:restset>
   </cm:restrictions>
   <cm:elements cm:rootid="ihO7eBzPJemC0ghg0joZiV4C94id">
     <cm:element cm:id="ihO7eBzPJemC0ghg0joZiV4C94id" cm:name="VMCS_Source" cm:type="ps:family" cm:class="ps:family" cm:default="on">
@@ -189,7 +214,6 @@
           <cm:target cm:id="ihZZQSG7u2kYYao_ruMQKLwQYyqc">./ibdy7_vlzL1o0CwRvs-4h-zSRuvp</cm:target>
           <cm:target cm:id="ijwsjl97YP9U0FINsDjF4LyU1Cbo">./i-UmgweX54kAFVmWAG-pXG0gEIuj</cm:target>
           <cm:target cm:id="idR6JDu1NXMlMpK3wPO41uFbq92g">./iCQ0EpBJnTSTCcm_TNsXLBKb-Wjh</cm:target>
-          <cm:target cm:id="iXrVU-wbBN9QBQBZgsNYe3FN2dad">./i7l2UlRwNDB4qXkDXpdQljpw6X-i</cm:target>
           <cm:target cm:id="i-3MQLyOCg9BPl9OqJhe2x0SmHDd">./iEJRPznkUQgPALSeeG6rcNGBf5Zn</cm:target>
           <cm:target cm:id="i7-K5J4bqGy4-2D7-rerK4-pd5ExLG4xf7Eisz2VB">./i40hJ2Aq5U2hU70ozfSOpodR3YBn</cm:target>
           <cm:target cm:id="iw1ic5Udq-FoJI429eXX8aqVlq0097UFNUl5Eaaks">./i1HWWSjt_STXjwvb_wJnAG0cy4_p</cm:target>
@@ -203,6 +227,7 @@
           <cm:target cm:id="ip0ZV8UwPCZYCG2P9Fp0rLX85Qro">./ie_0DG7qLHs8NKOyWfu-31dqgnIe</cm:target>
           <cm:target cm:id="iiEK93xUbQZ79qIvyr1gFznBjlto">./i5GbCg1z2oiYqzIyuVFSOcTpoLaj</cm:target>
           <cm:target cm:id="ic0A0iDYme8rdJMfZivhofpeNJei">./i4NIlRv1NbMbkRzPkYkhdtoA79sp</cm:target>
+          <cm:target cm:id="iqdQ6CYUNNJ1QWOsj">./ikROEGPL-cgbGpzac</cm:target>
         </cm:relation>
         <cm:relation cm:id="iVvbBU0mPb_Kt28cb" cm:type="ps:mandatory" cm:range="n">
           <cm:target cm:id="iMG3yrFWxsrVaA1s8">./ilWa-OUAu824wMZZPV-74VP0R34m</cm:target>
@@ -230,7 +255,7 @@
           <cm:constant cm:id="i7KkUh6zwYroT1iQS" cm:type="ps:string">e0015370</cm:constant>
         </cm:property>
         <cm:property cm:id="i1ceemxT3mKVzIGVk" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iQD66Azk_VSCR6PYC" cm:type="ps:datetime">2017-04-30T06:19:37.934Z</cm:constant>
+          <cm:constant cm:id="iQD66Azk_VSCR6PYC" cm:type="ps:datetime">2017-05-01T08:04:32.002Z</cm:constant>
         </cm:property>
       </cm:properties>
       <cm:vname>
@@ -4591,170 +4616,6 @@
         <cm:mimedesc cm:id="iPzW4pr_KgS1ajUzN" cm:mimetype="text/plain" cm:encoding="utf-8">readme.txt</cm:mimedesc>
       </cm:vname>
     </cm:element>
-    <cm:element cm:id="i7l2UlRwNDB4qXkDXpdQljpw6X-i" cm:type="ps:component" cm:class="ps:component" cm:default="on">
-      <cm:relations cm:id="i7l2UlRwNDB4qXkDXpdQljpw6X-idependecies" cm:class="ps:dependencies">
-      </cm:relations>
-      <cm:relations cm:id="iIivfebfHGOGOyMT7GiaaH4vfqKcapZOAlst0xfOQ" cm:class="ps:parents">
-        <cm:relation cm:id="i8V7UTl-pD3tuQASRfX4oKPmJygdqVRjsQkbW19-F" cm:type="ps:parent">
-          <cm:target cm:id="i6EQAGihrodSByMZmdqrKGiRkTRAgE3TBdGYS-Fu1">./ieJc-8d0g0xHmGgaQC_7TkbSc9vm</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="ikBeiZJ9Ipdke3Sh1QUDdfFK7Xcd" cm:class="ps:children">
-        <cm:relation cm:id="ih3CjZDOcvWEvTLYl0WiuvBiod4c" cm:type="ps:optional">
-          <cm:target cm:id="iJQwcr7B6pDEtqdt2RhQH8PQ-f_f">./i-Vzu9mCvUyp9idUcAOWNIBTF4Qi</cm:target>
-          <cm:target cm:id="iF57-gnheCBH_GjQQ0Nz-9uV5sub">./i6k06WPyUOf2mjxax2bF5hHI1Bvg</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iS9T9803BLxlrtC7V9OKBEsxXzPj" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iQ285S2Ve1ZkZArdQs5futVi9tpi" cm:type="ps:directory">VMCS Sources/ChineseVersion</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iP3HqRutdhXKrwyaCAjEEN2VEd4c" cm:type="ps:directory" cm:inheritable="true" cm:fixed="true" cm:name="dir">
-          <cm:constant cm:id="iRhrmG9grzo_XGRaxmH0DNQ8hKPa" cm:type="ps:directory">VMCS Sources/ChineseVersion</cm:constant>
-        </cm:property>
-        <cm:property cm:id="it1xe-m0eHccNJeTI" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iDtbyRIlX_Z7HL8D0" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ipaWKkMTDG8TW8DL8" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iBhtw5F3JMzZQOv9Z" cm:type="ps:datetime">2017-04-29T06:42:14.084Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iTy3YDPC2M11wjs9g" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i_UD79EfGC0fXHJ7N" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iGXLZ7Ic2BYv63plE" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iIikEjwpOuLOJfmDW" cm:type="ps:datetime">2017-04-29T06:42:14.085Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-      <cm:vname>
-        <cm:mimedesc cm:id="i-b9nXFJO7C-f-xUl" cm:mimetype="text/plain" cm:encoding="utf-8">ChineseVersion</cm:mimedesc>
-      </cm:vname>
-    </cm:element>
-    <cm:element cm:id="i6k06WPyUOf2mjxax2bF5hHI1Bvg" cm:type="ps:file" cm:class="ps:part" cm:default="on">
-      <cm:relations cm:id="i6k06WPyUOf2mjxax2bF5hHI1Bvgdependecies" cm:class="ps:dependencies">
-      </cm:relations>
-      <cm:relations cm:id="iTlOQywmJSRCNr0VBsKcqIikcbqpts04Es0kY_F3T" cm:class="ps:parents">
-        <cm:relation cm:id="i1Tu1GiJi5oXCvfZmjYKzis1T3Dr0WmOkywQkndmZ" cm:type="ps:parent">
-          <cm:target cm:id="imdjc5Epd1Dpt6URkNjcGCNq0BwWSfHJyS7icyMuL">./i7l2UlRwNDB4qXkDXpdQljpw6X-i</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="imt2ChxuUQQxIy9qDyn4pLQkxkhg" cm:class="ps:children">
-        <cm:relation cm:id="iR4AWo3XkXZ04fi6EJhsWRbJYtAg" cm:type="ps:optional">
-          <cm:target cm:id="ifj3munoX62Vs-5RfOJB3i1AZBOb">./ina-8WXUdt6VavNjhTSWB9sAkVCm</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="ilJzjjGo6Inf0wpop" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="izXGHVQjdjObkQoPI" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i2Vc2hcD7FcJqlkHd" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iN8GAwZZA8JpV-mLr" cm:type="ps:datetime">2017-04-29T06:42:14.085Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iB9Q-QIKPPC6hVlW8" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="itoN2qh3-t5-u7San" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i3VFJ6JQFq_eanrUz" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i5Zs_wkZeln0Mkujz" cm:type="ps:datetime">2017-04-29T06:42:14.085Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-      <cm:vname>
-        <cm:mimedesc cm:id="iFPqxiqt3XR9pfWaZ" cm:mimetype="text/plain" cm:encoding="utf-8">language</cm:mimedesc>
-      </cm:vname>
-    </cm:element>
-    <cm:element cm:id="ina-8WXUdt6VavNjhTSWB9sAkVCm" cm:type="ps:file" cm:class="ps:source" cm:default="on">
-      <cm:relations cm:id="ina-8WXUdt6VavNjhTSWB9sAkVCmdependecies" cm:class="ps:dependencies">
-      </cm:relations>
-      <cm:relations cm:id="iENw1gbebPAoJpdqu5UW8zM3DxLkYEhrKZmdGLjxf" cm:class="ps:parents">
-        <cm:relation cm:id="iOAP62T1TkIWS_FHOH4N5quxvgrVBFxNjicN5XS6-" cm:type="ps:parent">
-          <cm:target cm:id="igXvvlc0D9Fy2LPZ8mdpd19hXerda__3n_p2D-pr0">./i6k06WPyUOf2mjxax2bF5hHI1Bvg</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="i8H38f622QIphbWrvaXOIQVdtKKp" cm:type="ps:path" cm:fixed="true" cm:name="file">
-          <cm:constant cm:id="iSNK1pMtnFY3NDuBU88SIs2joDmn" cm:type="ps:path">language.txt</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iKByLn6elvAsN3-MUa9DbwlPOXpf" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
-          <cm:constant cm:id="iaDEWKyaZ-OwHj-9MTzjFUtvxTum" cm:type="ps:filetype">misc</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iU3BENqSrf-PRDk0y" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="idvOpKYA1SiZGgapu" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iPvisuiegrxj1nNaf" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="inaasbx8VBWnD8_KE" cm:type="ps:datetime">2017-04-29T06:42:14.085Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iaG198LxqRBr_WjTZ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iU-b0rkJqHec1K2cY" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i6qVVByyuq3obpoCD" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iDGMVFGLI9HxPbnGd" cm:type="ps:datetime">2017-04-29T06:42:14.085Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-      <cm:vname>
-        <cm:mimedesc cm:id="i_Rqd6b8FPnF4cN7g" cm:mimetype="text/plain" cm:encoding="utf-8">language.txt</cm:mimedesc>
-      </cm:vname>
-    </cm:element>
-    <cm:element cm:id="i-Vzu9mCvUyp9idUcAOWNIBTF4Qi" cm:type="ps:file" cm:class="ps:part" cm:default="on">
-      <cm:relations cm:id="i-Vzu9mCvUyp9idUcAOWNIBTF4Qidependecies" cm:class="ps:dependencies">
-      </cm:relations>
-      <cm:relations cm:id="idatKntaqPQteUBsegr_pWmYSseXSlYB2GOgr0n29" cm:class="ps:parents">
-        <cm:relation cm:id="iCNptwLqeaGI40ntuNzWC9_5UV7R6Gyjsw1gbSRGi" cm:type="ps:parent">
-          <cm:target cm:id="iYm_pKjPk3TqKDxQQ4E9pJO5-F37UgHr0KjptDNda">./i7l2UlRwNDB4qXkDXpdQljpw6X-i</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iKV_XaXOscOtm9rRKe4HOtaNadVe" cm:class="ps:children">
-        <cm:relation cm:id="iaSv4ndKgarhBnP3Ln-eoHzQKDVm" cm:type="ps:optional">
-          <cm:target cm:id="iT_PBMSSEKvS9Hx1xSnepqnZiLmf">./i6kL-zoXKYT88h92786bH2-oiOfk</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iw_Fw9RHLKD8gPfxC" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="inLa0Po-7keBNoNtM" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ieuHnA2WtnxhZNoyd" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iDoVeMctyv0_tioDM" cm:type="ps:datetime">2017-04-29T06:42:14.085Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iMH_Sfon-Gq14KWgi" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="ioLRM-wcB99ht8n4r" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i08yjGgE_cjA5wslv" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iBVlXeqGmIUjORsxk" cm:type="ps:datetime">2017-04-29T06:42:14.085Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-      <cm:vname>
-        <cm:mimedesc cm:id="idTHVDkYff0rl1Cg7" cm:mimetype="text/plain" cm:encoding="utf-8">DrinkPropertyFile</cm:mimedesc>
-      </cm:vname>
-    </cm:element>
-    <cm:element cm:id="i6kL-zoXKYT88h92786bH2-oiOfk" cm:type="ps:file" cm:class="ps:source" cm:default="on">
-      <cm:relations cm:id="i6kL-zoXKYT88h92786bH2-oiOfkdependecies" cm:class="ps:dependencies">
-      </cm:relations>
-      <cm:relations cm:id="iR6PQN55EhrXSbW5-5UreHOlYaGpdpZCx4-pdRQhH" cm:class="ps:parents">
-        <cm:relation cm:id="igH4-qeIyyMAg__8VZC2n2nXCD39p8_cGSlLjVR5o" cm:type="ps:parent">
-          <cm:target cm:id="iIiDNodJiKPLP8pBMUl-pVBtKu1A2md2ngbcWbqbW">./i-Vzu9mCvUyp9idUcAOWNIBTF4Qi</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iw1gPWXMr8VBXGgaMPaU_gnalB1p" cm:type="ps:path" cm:fixed="true" cm:name="file">
-          <cm:constant cm:id="i1iZ6fEn4sYTjkbR8im2z2f7tA3b" cm:type="ps:path">DrinkPropertyFile.txt</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i2c2FCyxF9gtZY3C3QTMDVCFj_ff" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
-          <cm:constant cm:id="irbT7R1fML6i8DtNEHMM3M4Jy4he" cm:type="ps:filetype">misc</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iUzSRk_Cszmfg51EI" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="ikewrfuWrMDUedtMl" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iUOyiSYMf5Za_j3kN" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iPpbJbJ33IX9nUGgg" cm:type="ps:datetime">2017-04-29T06:42:14.086Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i-V43XzVsb--1Nmge" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i3j8n0zEDZ4S2kNVo" cm:type="ps:string">e0015370</cm:constant>
-        </cm:property>
-        <cm:property cm:id="idmffK6RTqobFnqV8" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iFJlw7w1lZsv5bcNN" cm:type="ps:datetime">2017-04-29T06:42:14.086Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-      <cm:vname>
-        <cm:mimedesc cm:id="iqg4gp-nImdljL8G2" cm:mimetype="text/plain" cm:encoding="utf-8">DrinkPropertyFile.txt</cm:mimedesc>
-      </cm:vname>
-    </cm:element>
     <cm:element cm:id="ibuvhG4Rb0_J_La7PxkJa8ydtdLm" cm:type="ps:class" cm:class="ps:part" cm:default="on">
       <cm:relations cm:id="ibuvhG4Rb0_J_La7PxkJa8ydtdLmdependecies" cm:class="ps:dependencies">
       </cm:relations>
@@ -6404,6 +6265,388 @@
         </cm:property>
         <cm:property cm:id="i4kh8dseHN90wlEos" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
           <cm:constant cm:id="i8zd4vzKisjOOyKSm" cm:type="ps:datetime">2017-04-30T10:09:12.415Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
+    <cm:element cm:id="ikROEGPL-cgbGpzac" cm:type="ps:component" cm:class="ps:component" cm:default="on">
+      <cm:relations cm:id="iV2nIsaO0mxkuRryW" cm:class="ps:parents">
+        <cm:relation cm:id="iowdWfxh-GgC2iFV9" cm:type="ps:parent">
+          <cm:target cm:id="ifOtkj_ZULNj7Mifw">./ieJc-8d0g0xHmGgaQC_7TkbSc9vm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="iKrADqc9FWjuN-ZJ2" cm:class="ps:children">
+        <cm:relation cm:id="i9rKBX80Y9HH58n6Y" cm:type="ps:optional">
+          <cm:target cm:id="itOA0sai29n1BrWKe">./iPFwz26CttpCFhA3c</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iCk540cTOyj2nU-Bd" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iUwLTVsOH2wH5e7zx" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i4R3eovLi-cP6q08b" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iKvmxXzSpxivMQr8v" cm:type="ps:datetime">2017-05-01T08:04:32.002Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ivhG8rw7c5yJmcr0v" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iQRUMz_2Xw2drl0Vl" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iX08cyPRw9Qnt-bks" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iJb1cgnAccE01Sf7C" cm:type="ps:datetime">2017-05-01T08:08:48.651Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iSvhA7mX0V6ea_5-1" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iCia_FQhER1FXfbUW" cm:type="ps:directory">VMCS Sources/docs</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iYiiKTpZ4ojKW5bl2" cm:type="ps:directory" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iP5WqeLsJUDsZxsQL" cm:type="ps:directory">VMCS Sources/docs</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iLCqtLuHpJY33lxkK" cm:mimetype="text/plain" cm:encoding="utf-8">docs</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iPFwz26CttpCFhA3c" cm:type="ps:component" cm:class="ps:component" cm:default="on">
+      <cm:relations cm:id="iqhYw4qVOOu9gbhNZ" cm:class="ps:parents">
+        <cm:relation cm:id="iEV-Ya5BYvqVRt3RG" cm:type="ps:parent">
+          <cm:target cm:id="icKSx6eSlD0rwaj1p">./ikROEGPL-cgbGpzac</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="itSTF5nGxYj8hiCzv" cm:class="ps:children">
+        <cm:relation cm:id="i24r4rv4fgy49kL0O" cm:type="ps:optional">
+          <cm:target cm:id="iNUXJ3pmbJUTPjg-f">./iWvV3HQo9zcGPz_pL</cm:target>
+          <cm:target cm:id="iNeMm8vtNWfnEIdE2">./iBD_CNERNs_3i2Ww4</cm:target>
+          <cm:target cm:id="ixXiG0QYFGWPrXQTI">./i2momytF7ZfHU4sbE</cm:target>
+          <cm:target cm:id="inkO7KokAuFvGNcOq">./izM4vt_3gXI2jK_37</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ipubZbfQ8kj22XisX" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iLUQPzhc8UsKt75uv" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="izhZnR8SUnbGkIf1T" cm:type="ps:directory" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="i8PK6NvB9Hz3L1-Tv" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPA5NcKNc8WiGMEAp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iLOM-_oj8imeWyvej" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i1TdrHk0GX7afuFkC" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iXlf3x2WE8IvJabN1" cm:type="ps:datetime">2017-05-01T08:08:48.651Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOlzVGFHUBHG2kRqx" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iVFKC6J5KMtT_yvDD" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iQS5fuv1L47XXKA0j" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="i3MmUNwPnL4KCnSlY" cm:type="ps:datetime">2017-05-01T08:43:49.344Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="idBaufot1oxhyd0Xf" cm:mimetype="text/plain" cm:encoding="utf-8">System Test Case</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iWvV3HQo9zcGPz_pL" cm:type="ps:file" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ixf_C06IkOHVHwILl" cm:class="ps:parents">
+        <cm:relation cm:id="iaG6au1r7u2Y_Xs7O" cm:type="ps:parent">
+          <cm:target cm:id="iJmlSUPrcEZA0HHxp">./iPFwz26CttpCFhA3c</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="i9BX6SkqqNzlm6uuF" cm:class="ps:children">
+        <cm:relation cm:id="i3pV2awJHnV4uBbWU" cm:type="ps:optional">
+          <cm:target cm:id="i-zrYuZfVfFhfkFh5">./iBPppyZmgSuSQYH1s</cm:target>
+          <cm:target cm:id="iAigmssE3XAInnnCD">./i-ow9x_ckFFuktbGB</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iYSpBtf22cUSHKANx" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iTUgoBhqq8aMYQ04q" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="im9yC3VI4dxg1WJrP" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iRDtqA3Gv2U-jWOVZ" cm:type="ps:datetime">2017-05-01T08:26:56.350Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ib3X6d1aFCkW2WpTp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ie15lLbcFB2kf6NGD" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="inBUJzrMVXzxoH3UW" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ioSxE0dKSCkYJsKQx" cm:type="ps:datetime">2017-05-01T08:38:30.813Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iMBWfre3JbegvWWPF" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_01_LanguageDisplay</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iBPppyZmgSuSQYH1s" cm:restriction="i_vjQOzl7-ebfYtAV" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="il6xsgpfzdzLDe479" cm:class="ps:parents">
+        <cm:relation cm:id="ikBI18mv_8Nu57MpX" cm:type="ps:parent">
+          <cm:target cm:id="iG53bj0juNxx5tjQP">./iWvV3HQo9zcGPz_pL</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i76f-6nB-pItBcCT6" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i8fxwecjsK-92JFgN" cm:type="ps:path">VMCS_TEST_Log_01_LanguageDisplay.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iQczFDJAuXIcZ_wGL" cm:type="ps:directory" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iFAMHBfTNdeb90XVZ" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i2FRqHlQqwucgwWUg" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iz9GoPH6SANm1Vcv1" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iAVr-jvDebY9QvkD9" cm:type="ps:path" cm:fixed="true" cm:name="srcfile">
+          <cm:constant cm:id="iEx4s3d6U0eb0ILIF" cm:type="ps:path">VMCS_Test Log_01_Basic_English.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i1PK4fb7lZhtnLYti" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iqwEtMUkalCcx-jR4" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iNwi1hYdwdiRCVLSx" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="ikOPmZ4N2GaiIfKF2" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iWp8d-zFmC_6QxIeM" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ib_K4xsTPGsNhB76g" cm:type="ps:datetime">2017-05-01T08:27:58.217Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i3L-U1xg2vGEHSdAP" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="izeVwAXGaWWHtSoHt" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="icqtdCQd2ygH3Mbyx" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iW5hOBc-WJUlacThq" cm:type="ps:datetime">2017-05-01T08:30:59.127Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iYE9BaE0NWh8QkEqg" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_01_Basic_English.docx</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i-ow9x_ckFFuktbGB" cm:restriction="iGTF9EnN9R8tU-27d" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="ioMjNU7k7kVF8wxTs" cm:class="ps:parents">
+        <cm:relation cm:id="iATmt3ORRxyFiN10n" cm:type="ps:parent">
+          <cm:target cm:id="ikZj6rwdZzogFQsWq">./iWvV3HQo9zcGPz_pL</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iZqDRvK1uImAjg5cL" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="itObe8c1WLruSe4wk" cm:type="ps:path">VMCS_TestLog_01_LanguageDisplay.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ic9b8tzDUxOA-HMuC" cm:type="ps:directory" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iTDwovq9SuTnePM0o" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i18vBZuiY6HBTuTrS" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="ib0lCCuFCiFhNcdHB" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iVBHfxSYKQ_9fI2xE" cm:type="ps:path" cm:fixed="true" cm:name="srcfile">
+          <cm:constant cm:id="iSRJ5RdTSM512Gd4Q" cm:type="ps:path">VMCS_Test Log_01_Basic_Chinese.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="izm4AfIRKxyWw11pT" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iYAn3t04d-U3E2td0" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iliV0QUjUbnliesnJ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="igAddmp0Df0tDFAm_" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="icIZrDM7ktdBAur1N" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iQxb8CQENKJ6xWf19" cm:type="ps:datetime">2017-05-01T08:38:24.009Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iBP6lPQKg-1VDC424" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iunJ-RAI0mE3QNvAr" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ialoShUz75K4WG4Nr" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ia9MfRegQ-e5YurIb" cm:type="ps:datetime">2017-05-01T08:38:24.009Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iRbK-0UV9ldwKCC4w" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_01_Basic_Chinese.docx</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iBD_CNERNs_3i2Ww4" cm:type="ps:file" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ihjPPS9Abtr1qnsTQ" cm:class="ps:parents">
+        <cm:relation cm:id="iEKsw1ov81yM43GBy" cm:type="ps:parent">
+          <cm:target cm:id="iFq5oaTEiyvrmgYRK">./iPFwz26CttpCFhA3c</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="imRh9TK7g5M9Z5MyT" cm:class="ps:children">
+        <cm:relation cm:id="iluqyuspqp-YaqBI7" cm:type="ps:optional">
+          <cm:target cm:id="iN5iSc6nlqFpofP3A">./iKWgDVS5Ln0WUkUGe</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ivc35Fo1vcYXgCUzU" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iHOh7m4Z-HneyGQLB" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iK8fyYQwGkkizsoLl" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iRzxtnfQyfW8GsdL3" cm:type="ps:datetime">2017-05-01T08:41:08.229Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iea-DVgjf0WgzJm0q" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iMInGjkoCpaJor1rH" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPCpiqBv8CdPkbFoJ" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iTLzh9u8IzONNRfk-" cm:type="ps:datetime">2017-05-01T08:42:18.146Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iuSSD5bSCGzcCRoHG" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_02_ButtonDisplayImage.docx</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="iKWgDVS5Ln0WUkUGe" cm:restriction="iM9KS3rAAnr4iIpiZ" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iMavOTNh-wjrqgg4H" cm:class="ps:parents">
+        <cm:relation cm:id="i2ih6zphfdkEYEPrP" cm:type="ps:parent">
+          <cm:target cm:id="ibYnwRzxlTOv9828S">./iBD_CNERNs_3i2Ww4</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iAd12JeL3va_gW41m" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="i0P4bM5y9qGrsFxLd" cm:type="ps:path">VMCS_Test Log_02_ButtonDisplayImage.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="isqb0UC_ey7GpwIlv" cm:type="ps:directory" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iMTNyKKnFp4IDFHLX" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ijLc5lY4lBKcsQXlv" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iTzIMrwifJuuQEU4W" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOwsJfNmQafS8P_he" cm:type="ps:path" cm:fixed="true" cm:name="srcfile">
+          <cm:constant cm:id="i1GlvieZPm1RykBoh" cm:type="ps:path">VMCS_Test Log_02_ButtonDisplayImage.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ifGR4RzIGVv9GZqhN" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="ijqSF-HufrrhQPvKW" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iTTXjRZ90OO11WCRM" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iDeMUT_61__VYhbz2" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iX0BpRdCGHH3KW9zr" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iJvHfVqeIMoFETJlU" cm:type="ps:datetime">2017-05-01T08:42:18.146Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iwyDQFoukJuNBkllB" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iOrmpPC0KFDtDhjyK" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iWVBfBcdRnn9vLqDA" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iVDM552W2Anckajpn" cm:type="ps:datetime">2017-05-01T08:42:18.147Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ii7i5re-3nyZw12eR" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_02_ButtonDisplayImage.docx</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i2momytF7ZfHU4sbE" cm:type="ps:file" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iJlnHm1TmSw0MyoKP" cm:class="ps:parents">
+        <cm:relation cm:id="icGPAwHqaZ6BBPuFK" cm:type="ps:parent">
+          <cm:target cm:id="i8drvWGyDLuYzHS17">./iPFwz26CttpCFhA3c</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ioNxB1p_LpblWg5VO" cm:class="ps:children">
+        <cm:relation cm:id="i19bRf5zkjjsGKQi_" cm:type="ps:optional">
+          <cm:target cm:id="iemxrgAI9dha3cvFX">./i9bhBPlkl2iOoSj7W</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="ijHFU002aLYXnddbA" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iPIyqOEWe7_eUv-w9" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="izOetIRzbEpHl8Z4x" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i9HBkL_ClrPxHzEfr" cm:type="ps:datetime">2017-05-01T08:42:43.101Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixJ4RNHhva2mrmO0n" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iYeDIoPu889nSY8K5" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i13VIRQEwXb3ebkUu" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iVTptfzGj6NLrxW3c" cm:type="ps:datetime">2017-05-01T08:43:27.017Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="il-ywRn5P9WyQ-G4_" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_03_PaybyMembership.docx</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="i9bhBPlkl2iOoSj7W" cm:restriction="iwf3Pv61oHEH7hgVA" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="iqrpqzIHDkPMonVJJ" cm:class="ps:parents">
+        <cm:relation cm:id="i8H0v1fLuJZNsfrAv" cm:type="ps:parent">
+          <cm:target cm:id="ihS9ONJS4KLZaBnbQ">./i2momytF7ZfHU4sbE</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="i6rs-WiXKty11VDcz" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="igo_2ssUzlHGrsF4Q" cm:type="ps:path">VMCS_Test Log_03_PaybyMembership.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iofCOHTcDxet-LAP1" cm:type="ps:directory" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iziCu1puLJ4qv76ct" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ih3ODx9PZVzeJ1nzO" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="irLHrOVyVFwegxS8h" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ic41kCfDm8JS07P7_" cm:type="ps:path" cm:fixed="true" cm:name="srcfile">
+          <cm:constant cm:id="iIj74jiZmyeVpHPfC" cm:type="ps:path">VMCS_Test Log_03_PaybyMembership.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="isqM2NX9JnGaUBQFZ" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="iOPF7_OUroO3VizPh" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixMZSTzmXtrVpMjGW" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="isxM-uHQjhPjR5Xaf" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iPM29Q7WWD0K9rfAU" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iX3qnQiIYnmnnnMna" cm:type="ps:datetime">2017-05-01T08:43:27.017Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i-o3xo1Z7IxpueRp4" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iKrWcQRQVQs3Mhu_5" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i0y3IcaQ07iCMqHlR" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="ih9w_zBRDsAUPCHdm" cm:type="ps:datetime">2017-05-01T08:43:27.017Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="inbKbyevuZauSwzx0" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_03_PaybyMembership.docx</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="izM4vt_3gXI2jK_37" cm:type="ps:file" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="iTknzrr7q1x1XD2wE" cm:class="ps:parents">
+        <cm:relation cm:id="iLfm0cyZhV0GMU1kg" cm:type="ps:parent">
+          <cm:target cm:id="i-CbhVP79frd3-Fg_">./iPFwz26CttpCFhA3c</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ipj6ozl-HOlwjjO8m" cm:class="ps:children">
+        <cm:relation cm:id="iuuUwb0cW5VW-fDMy" cm:type="ps:optional">
+          <cm:target cm:id="iUTJkACBlDy1jjHBf">./ii3TJAQxnFuB-6mBJ</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iWwEgg_MBFty_R0pq" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="i-Pe27Mtbj_u0IciP" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ih7VVvijzXpi32DhY" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ilYdK8975W9eCich3" cm:type="ps:datetime">2017-05-01T08:43:49.344Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="isQYW0MKq9a5nX9Nb" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iB8jfI--D2v0HmI62" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iOER9c5TNwTXHLenY" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iFG_SEy9n3GicTThq" cm:type="ps:datetime">2017-05-01T08:44:44.044Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iELduygBDO_tRM-HW" cm:mimetype="text/plain" cm:encoding="utf-8">VMCS_Test Log_04_SelectDrinkbyKeyboard.docx</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="ii3TJAQxnFuB-6mBJ" cm:restriction="in7NUweKxAfYUj-gF" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="i0L0AwvMzfONp-lIs" cm:class="ps:parents">
+        <cm:relation cm:id="iA7SDkD6AnkW5OvKt" cm:type="ps:parent">
+          <cm:target cm:id="i0oHmL7BHB7F6Sdm_">./izM4vt_3gXI2jK_37</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="im7YnTohfVxhTXJIZ" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iytW1wrcUf31ygd9K" cm:type="ps:path">VMCS_Test Log_04_SelectDrinkbyKeyboard.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ixfyFGXV8c9ytAzaL" cm:type="ps:directory" cm:fixed="true" cm:name="dir">
+          <cm:constant cm:id="iWJ-ZjAKfyGYqvhVy" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="ieiAo2GSzADCJh0vc" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="iOkWXx580XbqSvPpC" cm:type="ps:filetype">misc</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iT7Q6Oc7m1oSI2v3C" cm:type="ps:path" cm:fixed="true" cm:name="srcfile">
+          <cm:constant cm:id="ihGc33gTxDcQuVgHI" cm:type="ps:path">VMCS_Test Log_04_SelectDrinkbyKeyboard.docx</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iELKiXqqZIEB6kTAC" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
+          <cm:constant cm:id="icOIzhEn8st84jlm7" cm:type="ps:directory">VMCS Sources/docs/System Test Case</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iVhrngizUg9qit04M" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="igq1azF_WwJSJTId1" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i4lN-KxrrHC_kdiQP" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="ivA2rloafQ9-wMOBG" cm:type="ps:datetime">2017-05-01T08:44:44.044Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iZOGujLdat7y10nfK" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="ituc8MSVUH_tQJxw3" cm:type="ps:string">e0015370</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iV5DjsTGh1YC6lUQE" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="if2EVl1_rzIWHvE7C" cm:type="ps:datetime">2017-05-01T08:44:44.044Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
